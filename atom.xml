@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.xuanbosblog.com/"/>
-  <updated>2017-12-01T08:20:19.481Z</updated>
+  <updated>2017-12-01T08:25:13.962Z</updated>
   <id>http://www.xuanbosblog.com/</id>
   
   <author>
@@ -21,16 +21,14 @@
     <link href="http://www.xuanbosblog.com/2017/12/01/Java%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE/"/>
     <id>http://www.xuanbosblog.com/2017/12/01/Java环境变量配置/</id>
     <published>2017-12-01T08:17:19.000Z</published>
-    <updated>2017-12-01T08:20:19.481Z</updated>
+    <updated>2017-12-01T08:25:13.962Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="1-首先你要在电脑上安装好-Java-的-JDK"><a href="#1-首先你要在电脑上安装好-Java-的-JDK" class="headerlink" title=" 1. 首先你要在电脑上安装好 Java 的 JDK"></a> 1. 首先你要在电脑上安装好 Java 的 JDK</h2><pre><code>我安装的是 jdk-8u144-windows-i586.exe</code></pre><h2 id="2-java环境配置"><a href="#2-java环境配置" class="headerlink" title="2. java环境配置"></a>2. java环境配置</h2><p>  在电脑桌面 右键点击 “此电脑”的“属性”选项<br>  然后选择高级系统设置<br>  点击高级变量<br>  <img src="https://i.loli.net/2017/12/01/5a210cda42b6a.png" alt="9RY)XWYA[J5E8[Z)9DD$6)3.png](https://i.loli.net/2017/12/01/5a210c5ee1eee.png)点击“环境变量”选项![IK~FEQD]0HT)`@TQV9@~E8K.png"><br>点击“系统变量”下面的”新建“选项<br><img src="https://i.loli.net/2017/12/01/5a210d313665e.png" alt="9$_TX8VI$1HBA]HGA]MK5LE.png"><br>在”变量名“处填上”Java_Home“”变量值“为JDK安装路径，我的路径是”C:\java\jdk“点击”确定“选项</p><p><img src="https://i.loli.net/2017/12/01/5a210e8d84b71.png" alt="MYCRHJS_~886}3R`E7W[(BQ.png](https://i.loli.net/2017/12/01/5a210ddbe9702.png)在”系统变量“中找到”Path“点击”编辑“选项将引号里面的全部复制“%Java_Home%\bin;%Java_Home%\jre\bin;”，到“变量值”栏的最前面，“确定”![P56L5CEEQGSJ@UK]SEN)BMY.png"></p><h2 id="3-检查Java环境是否配置成功"><a href="#3-检查Java环境是否配置成功" class="headerlink" title="3. 检查Java环境是否配置成功"></a>3. 检查Java环境是否配置成功</h2><p>打开CMD 输入java 和javac<br><img src="https://i.loli.net/2017/12/01/5a210f456abc8.png" alt="A~R{KE)$1}BXTAUBKK_@%%X.png"><br><img src="https://i.loli.net/2017/12/01/5a210f725d574.png" alt="EMXBB3XX(%{V46T4_G6P`7C.png"></p><p>恭喜你完成了环境配置~</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="1-首先你要在电脑上安装好-Java-的-JDK"><a href="#1-首先你要在电脑上安装好-Java-的-JDK" class="headerlink" title=" 1. 首先你要在电脑上安装好 Java 的 JDK"></a> 1. 首先你要在电脑上安装好 Java 的 JDK</h2><p>   我安装的是 jdk-8u144-windows-i586.exe</p><h2 id="2-java环境配置"><a href="#2-java环境配置" class="headerlink" title="2. java环境配置"></a>2. java环境配置</h2><a id="more"></a><p>  在电脑桌面 右键点击 “此电脑”的“属性”选项<br>  然后选择高级系统设置<br>  点击高级变量<br>  <img src="https://i.loli.net/2017/12/01/5a210cda42b6a.png" alt="9RY)XWYA[J5E8[Z)9DD$6)3.png](https://i.loli.net/2017/12/01/5a210c5ee1eee.png)点击“环境变量”选项![IK~FEQD]0HT)`@TQV9@~E8K.png"><br>点击“系统变量”下面的”新建“选项<br><img src="https://i.loli.net/2017/12/01/5a210d313665e.png" alt="9$_TX8VI$1HBA]HGA]MK5LE.png"><br>在”变量名“处填上”Java_Home“”变量值“为JDK安装路径，我的路径是”C:\java\jdk“点击”确定“选项</p><p><img src="https://i.loli.net/2017/12/01/5a210e8d84b71.png" alt="MYCRHJS_~886}3R`E7W[(BQ.png](https://i.loli.net/2017/12/01/5a210ddbe9702.png)在”系统变量“中找到”Path“点击”编辑“选项将引号里面的全部复制“%Java_Home%\bin;%Java_Home%\jre\bin;”，到“变量值”栏的最前面，“确定”![P56L5CEEQGSJ@UK]SEN)BMY.png"></p><h2 id="3-检查Java环境是否配置成功"><a href="#3-检查Java环境是否配置成功" class="headerlink" title="3. 检查Java环境是否配置成功"></a>3. 检查Java环境是否配置成功</h2><p>打开CMD 输入java 和javac<br><img src="https://i.loli.net/2017/12/01/5a210f456abc8.png" alt="A~R{KE)$1}BXTAUBKK_@%%X.png"><br><img src="https://i.loli.net/2017/12/01/5a210f725d574.png" alt="EMXBB3XX(%{V46T4_G6P`7C.png"></p><p>恭喜你完成了环境配置~</p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h2 id=&quot;1-首先你要在电脑上安装好-Java-的-JDK&quot;&gt;&lt;a href=&quot;#1-首先你要在电脑上安装好-Java-的-JDK&quot; class=&quot;headerlink&quot; title=&quot; 1. 首先你要在电脑上安装好 Java 的 JDK&quot;&gt;&lt;/a&gt; 1. 首先你要在电脑上
-      
+      &lt;h2 id=&quot;1-首先你要在电脑上安装好-Java-的-JDK&quot;&gt;&lt;a href=&quot;#1-首先你要在电脑上安装好-Java-的-JDK&quot; class=&quot;headerlink&quot; title=&quot; 1. 首先你要在电脑上安装好 Java 的 JDK&quot;&gt;&lt;/a&gt; 1. 首先你要在电脑上安装好 Java 的 JDK&lt;/h2&gt;&lt;p&gt;   我安装的是 jdk-8u144-windows-i586.exe&lt;/p&gt;
+&lt;h2 id=&quot;2-java环境配置&quot;&gt;&lt;a href=&quot;#2-java环境配置&quot; class=&quot;headerlink&quot; title=&quot;2. java环境配置&quot;&gt;&lt;/a&gt;2. java环境配置&lt;/h2&gt;
     
     </summary>
     
