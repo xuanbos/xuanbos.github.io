@@ -176,7 +176,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>冒泡排序：<br>冒泡排序的的优点是好理解，稳定，再就是空间复杂度低，不需要额外开辟数组元素的临时保存控件，当然了，编写起来也容易。<br><a id="more"></a><br>其算法很简单，就是比较数组相邻的两个值，把大的像泡泡一样“冒”到数组后面去，一共要执行N的平方除以2这么多次的比较和交换的操作（N为数组元素），其复杂度为Ο(n²)，如图：<br><img src="https://i.loli.net/2017/11/28/5a1d36e5d2fd4.png" alt="ds_sort_bubbler.png"></p>
+        <script src="\assets\js\APlayer.min.js"> </script><p>冒泡排序：<br>冒泡排序的的优点是好理解，稳定，再就是空间复杂度低，不需要额外开辟数组元素的临时保存控件，当然了，编写起来也容易。<br><a id="more"></a><br>其算法很简单，就是比较数组相邻的两个值，把大的像泡泡一样“冒”到数组后面去，一共要执行N的平方除以2这么多次的比较和交换的操作（N为数组元素），其复杂度为Ο(n²)，如图：<br><img src="https://i.loli.net/2017/11/28/5a1d36e5d2fd4.png" alt="ds_sort_bubbler.png"></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">从小到大升序排列</span><br><span class="line">int main()	</span><br><span class="line">&#123;</span><br><span class="line">int	a[]=&#123;8,4,10,12,9&#125;;</span><br><span class="line">int i,j,k;</span><br><span class="line">for(i=0;i&lt;5;i++)</span><br><span class="line">&#123;</span><br><span class="line">for(j=0;j&lt;5-i;j++)</span><br><span class="line">&#123;</span><br><span class="line">	if(a[j]&gt;a[j+1])</span><br><span class="line">	&#123;k=a[j+1];</span><br><span class="line">	a[j+1]=a[j];</span><br><span class="line">	a[j]=k;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;	for (i&lt;0;i&lt;5;i++)</span><br><span class="line">&#123;	</span><br><span class="line">printf(&quot;%5d&quot;,a[i]); </span><br><span class="line">&#125;	</span><br><span class="line">return 0;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">从大到小降序排列</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	int a[6]=&#123;10,8,9,4,5,6&#125;;</span><br><span class="line">	int i,j,k;</span><br><span class="line">	for(i=0;i&lt;6;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		for (j=0;j&lt;j-i;j++)		</span><br><span class="line">		&#123;</span><br><span class="line">		if(a[j]&lt;a[j+1])</span><br><span class="line">			&#123;</span><br><span class="line">				k=a[j+1];</span><br><span class="line">				a[j+1]=a[j];</span><br><span class="line">				a[j]=k;</span><br><span class="line">			&#125;</span><br><span class="line">	&#125;</span><br><span class="line">		for(i=0;i&lt;6;i++)</span><br><span class="line">		&#123;printf(&quot;%3d&quot;,a[i]);</span><br><span class="line">		&#125;</span><br><span class="line">return 0;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
@@ -454,14 +454,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">C语言</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">冒泡排序</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">hello</a>
               </li>
              
@@ -470,7 +462,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">C语言</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">冒泡排序</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">鸡汤</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -482,7 +486,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">鸡汤</a>
+                <a href="javascript:void(0)" class="js-tag color1">music</a>
               </li>
             
             <div class="clearfix"></div>
