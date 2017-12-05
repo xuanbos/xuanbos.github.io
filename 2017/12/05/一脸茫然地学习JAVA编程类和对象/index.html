@@ -6,14 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.xuanbosblog.com">
-  <title>Tag: Linux | Xxxuan的博客</title>
+  <title>一脸茫然地学习JAVA编程类和对象 | Xxxuan的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Xxxuan的博客">
-<meta property="og:url" content="http://www.xuanbosblog.com/tags/Linux/index.html">
+  <meta name="description" content="1.如何实例化对象？（创建对象） 类名 对象名= new 类名（);类必须先定义再使用。类是创建对象的模板，创建对象也叫类的实例化。">
+<meta name="keywords" content="java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一脸茫然地学习JAVA编程类和对象">
+<meta property="og:url" content="http://www.xuanbosblog.com/2017/12/05/一脸茫然地学习JAVA编程类和对象/index.html">
 <meta property="og:site_name" content="Xxxuan的博客">
+<meta property="og:description" content="1.如何实例化对象？（创建对象） 类名 对象名= new 类名（);类必须先定义再使用。类是创建对象的模板，创建对象也叫类的实例化。">
+<meta property="og:image" content="https://i.loli.net/2017/12/05/5a2680e601d3e.jpg">
+<meta property="og:image" content="https://i.loli.net/2017/12/05/5a26819793fbf.gif">
+<meta property="og:updated_time" content="2017-12-05T11:25:19.713Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Xxxuan的博客">
+<meta name="twitter:title" content="一脸茫然地学习JAVA编程类和对象">
+<meta name="twitter:description" content="1.如何实例化对象？（创建对象） 类名 对象名= new 类名（);类必须先定义再使用。类是创建对象的模板，创建对象也叫类的实例化。">
+<meta name="twitter:image" content="https://i.loli.net/2017/12/05/5a2680e601d3e.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Xxxuan的博客" type="application/atom+xml">
   
@@ -153,64 +161,193 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-一脸茫然地学习JAVA编程类和对象" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/03/RedHat Linux下本地yum源配置/" class="archive-article-date">
-  	<time datetime="2017-12-03T07:45:52.891Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-03</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/03/RedHat Linux下本地yum源配置/">RedHat Linux下本地yum源配置</a>
+    <h1 class="article-title" itemprop="name">
+      一脸茫然地学习JAVA编程类和对象
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/12/05/一脸茫然地学习JAVA编程类和对象/" class="archive-article-date">
+  	<time datetime="2017-12-05T11:25:31.675Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-05</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <script src="\assets\js\APlayer.min.js"> </script><p>1.如何实例化对象？（创建对象）</p>
+<p>类名 对象名= new 类名（);<br>类必须先定义再使用。类是创建对象的模板，创建对象也叫类的实例化。<br><img src="https://i.loli.net/2017/12/05/5a2680e601d3e.jpg" alt="u=1553649747,138666265&amp;fm=27&amp;gp=0.jpg"><br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">public class Person &#123;</span><br><span class="line">		//类的属性</span><br><span class="line">		public String name;</span><br><span class="line">		public String sex;</span><br><span class="line">		public int age;</span><br><span class="line">		public void drink() &#123;</span><br><span class="line">			System.out.println(&quot;人渴的时候要喝水&quot;);</span><br><span class="line">		&#125;</span><br><span class="line">		//类的方法</span><br><span class="line">		public void eat() &#123;</span><br><span class="line">			System.out.println(&quot;人饿的时候要吃饭&quot;);</span><br><span class="line">		&#125;</span><br><span class="line">		public void running() &#123;</span><br><span class="line">			System.out.println(&quot;人难过的时候要跑步&quot;);</span><br><span class="line">		&#125;</span><br><span class="line">	public static void main(String[] args) &#123;//主函数</span><br><span class="line">		// TODO Auto-generated method stub</span><br><span class="line">		Person m = new Person(); //对象实例化</span><br><span class="line">		m.drink();	//调用类的方法</span><br><span class="line">		m.eat();</span><br><span class="line">		m.running();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>2.构造方法<br>语法规则：<br>方法名与类名相同；<br>不要返回类型（例如return、void等）；<br>不能被static、final、native、abstract和synchronized修饰，不能被子类继承。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">public class Sample &#123;</span><br><span class="line"></span><br><span class="line">	private int x;</span><br><span class="line">	public Sample() &#123;//无参构造方法</span><br><span class="line">		this(28);</span><br><span class="line">	&#125;</span><br><span class="line">	public Sample(int x) &#123;//带参数的构造方法</span><br><span class="line">		this.x=x;</span><br><span class="line">	&#125;</span><br><span class="line">	public int Sample(int x) &#123;</span><br><span class="line">		return x+1;//不能有返回值 ！ 不是构造方法</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">public class Mystery &#123;  </span><br><span class="line">    private String s;  </span><br><span class="line">      </span><br><span class="line">    public void Mystery() &#123; //不是构造方法  </span><br><span class="line">    s = &quot;constructor&quot;;  </span><br><span class="line">    &#125;  </span><br><span class="line">      </span><br><span class="line">    void go() &#123;  </span><br><span class="line">    System.out.println(s);  </span><br><span class="line">    &#125;  </span><br><span class="line">      </span><br><span class="line">    public static void main(String[] args) &#123;  </span><br><span class="line">    Mystery m = new Mystery();  </span><br><span class="line">    m.go();  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>程序结果为：null，Mystery m = new Mystery();调用了Mystery 类的构造方法，但是public void Mystery()并不是构造方法，他只是一个普通的实例方法而已,那该类的构造方法哪去了呢？<br>java语言中规定每个类至少要有一个构造方法,为了保证这一点，当用户没有给java类定义明确的构造方法的时候,java为我们提供了一个默认的构造方法,这个构造方法没有参数,修饰符是public并且方法体为空。如果用户有定义构造方法，就不会有默认构造方法！！！<br>其实默认的构造方法还分为两种,一种就是刚刚说过的隐藏的构造方法,另一种就是显示定义的默认构造方法.<br>如果一个类中定义了一个或者多个构造方法,并且每一个构造方法都是带有参数形式的,那么这个类就没有默认的构造方法,看下面的例子。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">public class Sample1&#123;&#125;  </span><br><span class="line">  </span><br><span class="line">public class Sample2&#123;  </span><br><span class="line">    public Sample2(int a)&#123;System.out.println(&quot;My Constructor&quot;);&#125;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line">public class Sample3&#123;  </span><br><span class="line">    public Sample3()&#123;System.out.println(&quot;My Default Constructor&quot;);&#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Sample1有一个隐式的默认构造方法,下列语句Sample1 s1=new Sample()合法;<br>Sample2没有默认的构造方法,下列语句Sample2 s2=new Sample2()不合法,执行会编译错误<br>Sample3有一个显示的默认构造方法,所以以下语句Sample3  s3=new Sample3();合法。</p>
+<p>构造方法<br>public(修饰符) class（定义类的关键字） Test（类名）(){<br>//无参<br>Test（类名）（）{    }<br>//带一个参数<br>Test（类名）（String(变量类型) name（变量名））{    }</p>
+<p>}<br>一般方法：<br>定义类：<br>public(修饰符) class（定义类的关键字） Test（类名）(){<br>      private(修饰符) static(修饰符) String(变量类型) s（变量名） = “hello world”;<br>下面是方法的定义<br>      public(修饰符)  static(修饰符)  void(返回值类型)  main（方法名）（String[] args（参数）){<br>             System.out.println(s);（代码语句）<br>      }<br>}<br>不同点：<br>构造方法：</p>
+<p>构造方法在创建的时候就给对象初始化；<br>一个对象建立构造方法只能运行一次；<br>一般方法：</p>
+<p>一般方法是对象调用才执行，给对象添加对象具备的功能；<br>一般方法可以被对象多次调用；<br><img src="https://i.loli.net/2017/12/05/5a26819793fbf.gif" alt="18550000d040bbe22261.gif"></p>
+<p>Bye~</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="\assets\img\alipay.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="\assets\img\wechat.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Yum</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://www.xuanbosblog.com/2017/12/05/一脸茫然地学习JAVA编程类和对象/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-  
-    </div></section>
-  
 
-    
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2017/12/03/RedHat Linux下本地yum源配置/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">RedHat Linux下本地yum源配置</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    目录，不存在的…
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
 
 
           </div>
@@ -241,9 +378,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
