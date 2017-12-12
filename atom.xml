@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.xuanbosblog.com/"/>
-  <updated>2017-12-11T11:37:33.821Z</updated>
+  <updated>2017-12-12T11:18:16.222Z</updated>
   <id>http://www.xuanbosblog.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用Apache服务部署静态网站</title>
+    <link href="http://www.xuanbosblog.com/2017/12/12/%E4%BD%BF%E7%94%A8Apache%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/"/>
+    <id>http://www.xuanbosblog.com/2017/12/12/使用Apache服务部署静态网站/</id>
+    <published>2017-12-12T11:04:04.864Z</published>
+    <updated>2017-12-12T11:18:16.222Z</updated>
+    
+    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p> <img src="https://i.loli.net/2017/12/12/5a2faf590e388.jpg" alt="first.jpg"></p><ol><li>将光盘设备中的系统镜像挂载到/media/cdrom目录下。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir /media/cdrom</span><br><span class="line">mount /dev/sr0 /media/cdrom</span><br></pre></td></tr></table></figure></li></ol><a id="more"></a><p>2.使用vim文本编辑器创建yum仓库的配置</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost 桌面]# vim /etc/yum.repos.d/rhe17.repo</span><br><span class="line">[rhe17]</span><br><span class="line">nmae=rhe17</span><br><span class="line">baseurl=file:///media/cdrom</span><br><span class="line">enabled=1</span><br><span class="line">gpgcheck=0</span><br><span class="line">``` 3. 安装Apache服务，使用yum命令安装 yum install -y  -y表示同意所有依赖安装。</span><br></pre></td></tr></table></figure><p>yum install httpd -y</p><p><img src="https://i.loli.net/2017/12/12/5a2fb164348db.png" alt="安装httpd.PNG"><br>4.启动http服务并将其加入到开机启动项中，从而实现随系统开机而运行服务。</p><p><img src="https://i.loli.net/2017/12/12/5a2fb1dd0d4f5.png" alt="开机启动.PNG"></p><p>5.向网站数据目录/var/www/html下写入一个文件，当前网站普遍的首页名称为index.html，所以我们创建一个，此文件会替换掉httpd服务程序的默认首页面。</p><p><img src="http://img.blog.csdn.net/20171212191235517?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2VpeGluXzQxMDk5NzQ2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>6.打开浏览器输入http：//127.0.0.1 回车查看结果（我以firefox浏览器为例）</p><p><img src="http://img.blog.csdn.net/20171212191249441?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2VpeGluXzQxMDk5NzQ2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p><h2 id="————————————————–"><a href="#————————————————–" class="headerlink" title="————————————————–"></a>————————————————–</h2><p> -配置服务文件参数<br>服务目录             /etc/httpd<br>主配置文件        /etc/httpd/conf/httpd.conf<br>网站数据目录    /var/www/html<br>访问日志            /var/log/httpd/access_log<br>错误日志            /var/log/httpd/error_log</p><p>-httpd服务程序最常用的参数及用途描述<br>ServerRoot            服务目录<br>ServerAdmin        管理员邮箱<br>User                        运行服务的用户<br>Group                    运行服务的组<br>ServerName        网站服务器的域名<br>DocumentRoot     网站数据目录<br>Directory                网站数据目录权限<br>Listen                    监听的ip及端口号<br>DirectoryIndex    默认的索引页页面<br>ErrorLog                错误日志<br>CustomLog            访问日志<br>TimeOut                网页超时时间，默认为300秒</p><h2 id="————————————————–-1"><a href="#————————————————–-1" class="headerlink" title="————————————————–"></a>————————————————–</h2><p>Bye~</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt; &lt;img src=&quot;https://i.loli.net/2017/12/12/5a2faf590e388.jpg&quot; alt=&quot;first.jpg&quot;&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;将光盘设备中的系统镜像挂载到/media/cdrom目录下。&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mkdir /media/cdrom&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;mount /dev/sr0 /media/cdrom&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+    
+      <category term="httpd" scheme="http://www.xuanbosblog.com/tags/httpd/"/>
+    
+  </entry>
   
   <entry>
     <title>Vim编辑器常用指令戳进来！</title>
