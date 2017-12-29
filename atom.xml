@@ -33,9 +33,9 @@
     </summary>
     
     
-      <category term="music" scheme="http://www.xuanbosblog.com/tags/music/"/>
-    
       <category term="随笔" scheme="http://www.xuanbosblog.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="music" scheme="http://www.xuanbosblog.com/tags/music/"/>
     
   </entry>
   
@@ -229,9 +229,9 @@
     </summary>
     
     
-      <category term="鸡汤" scheme="http://www.xuanbosblog.com/tags/%E9%B8%A1%E6%B1%A4/"/>
-    
       <category term="随笔" scheme="http://www.xuanbosblog.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="鸡汤" scheme="http://www.xuanbosblog.com/tags/%E9%B8%A1%E6%B1%A4/"/>
     
   </entry>
   
