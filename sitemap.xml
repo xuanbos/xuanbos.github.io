@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.xuanbosblog.com/photos/data.json</loc>
+    
+    <lastmod>2018-01-17T10:13:39.028Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.xuanbosblog.com/2018/01/05/Redhat%207%E4%B8%8Bsamba%E7%9A%84%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</loc>
     
     <lastmod>2018-01-05T08:08:50.241Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>http://www.xuanbosblog.com/2017/12/16/%E9%80%81%E4%BD%A0%E4%B8%80%E7%A2%97%E5%8A%B1%E5%BF%97%E7%9A%84%E6%AF%92%E9%B8%A1%E6%B1%A4%EF%BC%9F/</loc>
     
     <lastmod>2017-12-29T08:44:33.653Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.xuanbosblog.com/photo/index.html</loc>
-    
-    <lastmod>2017-12-23T10:56:37.314Z</lastmod>
     
   </url>
   
