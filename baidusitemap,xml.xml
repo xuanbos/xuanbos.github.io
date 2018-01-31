@@ -3,18 +3,17 @@
 
 
     
-    
   <url>
     <loc>http://www.xuanbosblog.com/2018/01/05/Redhat%207%E4%B8%8Bsamba%E7%9A%84%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</loc>
-    <lastmod>2018-01-05T08:08:50.241Z</lastmod>
+    <lastmod>2018-01-31T07:09:03.823Z</lastmod>
     <data>
         <display>
         <title>Redhat 7下samba的基本配置</title>
         <pubTime>2018-01-05T08:09:10.672Z</pubTime>
         
-        <tag>Linux</tag>
-         
         <tag>samba</tag>
+         
+        <tag>Linux</tag>
          
          
            
@@ -25,7 +24,7 @@
     
   <url>
     <loc>http://www.xuanbosblog.com/2018/01/01/%E4%BB%8E%E5%89%8D%E4%B8%8D%E5%9B%9E%E5%A4%B4%EF%BC%8C%E4%BB%A5%E5%90%8E%E4%B8%8D%E5%B0%86%E5%B0%B1%E3%80%822017%E5%86%8D%E8%A7%81%EF%BC%8C2018%E4%BD%A0%E5%A5%BD%EF%BC%81/</loc>
-    <lastmod>2017-12-31T18:21:10.140Z</lastmod>
+    <lastmod>2018-01-31T07:08:47.617Z</lastmod>
     <data>
         <display>
         <title>从前不回头，以后不将就。2017再见，2018你好！</title>
@@ -41,6 +40,43 @@
     </data>
     </url>
 
+    
+  <url>
+    <loc>http://www.xuanbosblog.com/2018/01/31/%E6%80%8E%E4%B9%88%E6%89%8D%E8%83%BD%E6%B4%BB%E7%9A%84%E7%AE%80%E5%8D%95%E5%BF%AB%E4%B9%90%EF%BC%9F/</loc>
+    <lastmod>2018-01-31T07:07:26.608Z</lastmod>
+    <data>
+        <display>
+        <title>怎么才能活的简单快乐？</title>
+        <pubTime>2018-01-31T07:07:47.660Z</pubTime>
+        
+        <tag>Life</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.xuanbosblog.com/2017/12/16/%E9%80%81%E4%BD%A0%E4%B8%80%E7%A2%97%E5%8A%B1%E5%BF%97%E7%9A%84%E6%AF%92%E9%B8%A1%E6%B1%A4%EF%BC%9F/</loc>
+    <lastmod>2018-01-31T07:06:03.331Z</lastmod>
+    <data>
+        <display>
+        <title>送你一碗热乎乎的励志毒鸡汤？</title>
+        <pubTime>2017-12-15T16:21:34.777Z</pubTime>
+        
+        <tag>随笔</tag>
+         
+        <tag>music</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://www.xuanbosblog.com/2017/11/24/%E4%B8%8D%E7%9F%A5%E4%B8%8D%E8%A7%89%E5%8D%81%E4%B8%80%E6%9C%88%E5%8D%B3%E5%B0%86%E7%BB%93%E6%9D%9F%EF%BC%8C%E5%96%9D%E7%A2%97%E9%B8%A1%E6%B1%A4%E5%86%8D%E6%BA%9C%E3%80%82/</loc>
@@ -72,25 +108,6 @@
         <tag>秋游</tag>
          
         <tag>随笔</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.xuanbosblog.com/2017/12/16/%E9%80%81%E4%BD%A0%E4%B8%80%E7%A2%97%E5%8A%B1%E5%BF%97%E7%9A%84%E6%AF%92%E9%B8%A1%E6%B1%A4%EF%BC%9F/</loc>
-    <lastmod>2017-12-29T08:44:33.653Z</lastmod>
-    <data>
-        <display>
-        <title>送你一碗热乎乎的励志毒鸡汤？</title>
-        <pubTime>2017-12-15T16:21:34.777Z</pubTime>
-        
-        <tag>随笔</tag>
-         
-        <tag>music</tag>
          
          
            
