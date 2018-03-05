@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://www.xuanbosblog.com/2018/03/05/%5B%E8%BD%AC%E8%BD%BD%E6%96%87%E7%AB%A0%5DJava%E4%B8%ADArrayList%E7%B1%BB%E8%AF%A6%E8%A7%A3/</loc>
+    <lastmod>2018-03-05T10:25:35.147Z</lastmod>
+    <data>
+        <display>
+        <title>Java中ArrayList类详解</title>
+        <pubTime>2018-03-05T10:24:03.596Z</pubTime>
+        
+        <tag>转载</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.xuanbosblog.com/2018/01/31/%E6%80%8E%E4%B9%88%E6%89%8D%E8%83%BD%E6%B4%BB%E7%9A%84%E7%AE%80%E5%8D%95%E5%BF%AB%E4%B9%90%EF%BC%9F/</loc>
     <lastmod>2018-01-31T07:18:19.387Z</lastmod>
     <data>
@@ -30,9 +47,9 @@
         <title>Redhat 7下samba的基本配置</title>
         <pubTime>2018-01-05T08:09:10.672Z</pubTime>
         
-        <tag>Linux</tag>
-         
         <tag>samba</tag>
+         
+        <tag>Linux</tag>
          
          
            

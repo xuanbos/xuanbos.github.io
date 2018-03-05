@@ -6,27 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.xuanbosblog.com">
-  <title>送你一碗热乎乎的励志毒鸡汤？ | Xxxuan的博客</title>
+  <title>Java中ArrayList类详解 | Xxxuan的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="因为今天苏州的天气让我的情绪有点失落！">
-<meta name="keywords" content="随笔,music">
+  <meta name="keywords" content="转载">
 <meta property="og:type" content="article">
-<meta property="og:title" content="送你一碗热乎乎的励志毒鸡汤？">
-<meta property="og:url" content="http://www.xuanbosblog.com/2017/12/16/送你一碗励志的毒鸡汤？/index.html">
+<meta property="og:title" content="Java中ArrayList类详解">
+<meta property="og:url" content="http://www.xuanbosblog.com/2018/03/05/[转载文章]Java中ArrayList类详解/index.html">
 <meta property="og:site_name" content="Xxxuan的博客">
-<meta property="og:description" content="因为今天苏州的天气让我的情绪有点失落！">
-<meta property="og:image" content="https://i.loli.net/2017/12/15/5a33f0e03ee4f.jpg">
-<meta property="og:image" content="http://img1.imgtn.bdimg.com/it/u=3997060719,1263799790&fm=27&gp=0.jpg">
-<meta property="og:image" content="http://img0.imgtn.bdimg.com/it/u=670915793,1011682399&fm=27&gp=0.jpg">
-<meta property="og:image" content="http://i9.download.fd.pchome.net/t_600x1024/g1/M00/0A/06/oYYBAFPV_8-IKaDTAANqlYhsy24AAByegMZrRYAA2qt945.jpg">
-<meta property="og:image" content="http://p2.gexing.com/shaitu/20120925/1948/506199f4e6580.png">
-<meta property="og:image" content="http://pic2.duowan.com/news/1104/166614413890/166629298443.jpg">
-<meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1513364809273&di=42442bcd9de393e9f920a9e277824469&imgtype=0&src=http://img3.duitang.com/uploads/item/201604/08/20160408131036_sTGFj.jpeg">
-<meta property="og:updated_time" content="2018-01-31T07:06:03.331Z">
+<meta property="og:image" content="http://img.blog.csdn.net/20180305182148138?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2VpeGluXzQxMDk5NzQ2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
+<meta property="og:updated_time" content="2018-03-05T10:25:35.147Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="送你一碗热乎乎的励志毒鸡汤？">
-<meta name="twitter:description" content="因为今天苏州的天气让我的情绪有点失落！">
-<meta name="twitter:image" content="https://i.loli.net/2017/12/15/5a33f0e03ee4f.jpg">
+<meta name="twitter:title" content="Java中ArrayList类详解">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20180305182148138?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2VpeGluXzQxMDk5NzQ2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
   
     <link rel="alternative" href="/atom.xml" title="Xxxuan的博客" type="application/atom+xml">
   
@@ -172,56 +163,62 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-送你一碗励志的毒鸡汤？" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-[转载文章]Java中ArrayList类详解" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      送你一碗热乎乎的励志毒鸡汤？
+      Java中ArrayList类详解
     </h1>
   
 
         
-        <a href="/2017/12/16/送你一碗励志的毒鸡汤？/" class="archive-article-date">
-  	<time datetime="2017-12-15T16:21:34.777Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-16</time>
+        <a href="/2018/03/05/[转载文章]Java中ArrayList类详解/" class="archive-article-date">
+  	<time datetime="2018-03-05T10:24:03.596Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-05</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <script src="\assets\js\APlayer.min.js"> </script><ul>
-<li>因为今天苏州的天气让我的情绪有点失落！<br><img src="https://i.loli.net/2017/12/15/5a33f0e03ee4f.jpg" alt="0179be576177c50000018c1b582414.jpg@1280w_1l_2o_100sh.jpg"><a id="more"></a></li>
-<li>我讨厌雨天又喜欢雨天，讨厌是因为下雨会使得大地上泥泞不堪，大地仅存的温度也在被搜刮，一切都变得冰冷潮湿。心情也随着这阴雨变得更加低落。</li>
-<li>我有时又会喜欢雨天，下雨天让我觉得很有安全感，周围变得很安静，空气变得舒适。<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=451620178&auto=0&height=66"></iframe>
-
-</li>
-</ul>
-<h1 id="雨天送你一碗毒鸡汤"><a href="#雨天送你一碗毒鸡汤" class="headerlink" title="雨天送你一碗毒鸡汤"></a>雨天送你一碗毒鸡汤</h1><ul>
-<li><strong>是骄傲、虚荣、嫉妒和报复，支撑你走到今天。</strong></li>
-</ul>
-<p>你的成长依赖这些负的能量，而非天生的善良。请拥抱负能量，因为负能量赐予你赚钱的本事，毒辣的眼光，强大的内心和无畏的力量。那些抱着鸡汤的人，不是硬爹硬妈翅膀下的二代，就是含着金汤勺出生的投胎高手。他们丝毫不费力吃着鸡肉却学着父母让你们喝鸡汤，他们根本不让你们看到这个社会的规则和阴暗。如果你没有好的家境，却还听从权贵去品尝恶臭无比的鸡汤，简直就是在浪费你本来就卑微的人生。<br><img src="http://img1.imgtn.bdimg.com/it/u=3997060719,1263799790&amp;fm=27&amp;gp=0.jpg" alt="这里写图片描述"></p>
-<hr>
-<ul>
-<li>同学聚会前，你很担心，以为那些出人头地的老同学会嘲笑你人生的失败。</li>
-</ul>
-<p>谁知人家却勾着肩膀回忆当年一起打球一起抄作业的日子，几杯酒下肚眼圈都红了。聚会结束后，那些有钱有势趣味相投的老同学仍然彼此保持着密切的联系，你帮我我帮你。而你又回到自己的日子，好像做了一场梦。朋友，老同学，老同事，聚餐，忆苦思甜，仿佛一起快乐的日子就在昨天，但没人乐意回忆聚餐后的发生的事。现实就是现实，任何老同学，老同事都无法阻挡现实的大潮。如果你的圈子很卑微，倒不如不去参加聚餐，何必让自己的卑微化作笑柄。</p>
-<h2 id=""><a href="#" class="headerlink" title=""></a><img src="http://img0.imgtn.bdimg.com/it/u=670915793,1011682399&amp;fm=27&amp;gp=0.jpg" alt="这里写图片描述"></h2><ul>
-<li><strong>在中国人传统的概念里，从来没有平等和互相尊重这回事。</strong></li>
-</ul>
-<p>不是你跪着，就是我跪着，那才是中国人际交往的稳定状态。等级的划分才是最传统的东西，连孔子那帮人都看不起奴隶，你为什么还盲目做一个只会对领导言听计从的奴隶？聪明的人是极少数的，这极少数的人每天都在绞尽脑汁的考虑，如何打破等级的壁垒。他们从来不漫无目的的努力，也不瞎忙，他们每一步棋都会让自己往前走一大步。提升是需要原罪的，善良的人在这个社会没有出头之日，只要不是杀人放火，违法乱纪，那么你所做的一切损人利己的事都是正确伟大的。</p>
-<h2 id="-1"><a href="#-1" class="headerlink" title=""></a><img src="http://i9.download.fd.pchome.net/t_600x1024/g1/M00/0A/06/oYYBAFPV_8-IKaDTAANqlYhsy24AAByegMZrRYAA2qt945.jpg" alt="这里写图片描述"></h2><ul>
-<li><strong>什么叫乐观？我觉得乐观就是你本来过得就不好却还在那里傻乐。</strong></li>
-</ul>
-<p>失败者对于现状的妥协和自我安慰，这些都叫乐观。经常乐观的人就是经常失败，居无定所，没有人生方向的人。有钱人不乐观，有钱人也不需要乐观，钞票一甩，那叫乐呵；领导也不乐观，领导喜欢开会让下属保持乐观，然后还没下班就和有钱人的圈子去找乐，那叫乐子。别抱着乐观以为自己就是天下最努力最勤奋的人，人傻一时别傻一辈子。<br><img src="http://p2.gexing.com/shaitu/20120925/1948/506199f4e6580.png" alt="这里写图片描述"></p>
-<hr>
-<ul>
-<li><strong>不要把自己的软弱展现给别人看，不要把自己的狼狈述说给别人听。</strong></li>
-</ul>
-<p>因为根本没有人会觉的你很可怜， 只会觉的你很无能很没用。大多数人都很反感对方吐槽自己的生活不容易，自己被屈才了等等。愿意听你牢骚的人，也是跟你一样失败的人。失败的人和失败的人聚到一起，一起埋怨公司埋怨这个世界，看起来真是可笑加无聊。所以管住你自己的嘴巴，交流你的成功，不要沟通你的失败。当你一直都在自信你的成功，你就会越来越成功，当你一直在计较自己的失败，你必然会越来越失败。</p>
-<h2 id="-2"><a href="#-2" class="headerlink" title=""></a><img src="http://pic2.duowan.com/news/1104/166614413890/166629298443.jpg" alt="这里写图片描述"></h2><p>The end<br>不管鸡汤毒不毒，喝口白开水好好走路吧。<br><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1513364809273&amp;di=42442bcd9de393e9f920a9e277824469&amp;imgtype=0&amp;src=http://img3.duitang.com/uploads/item/201604/08/20160408131036_sTGFj.jpeg" alt="这里写图片描述"><br>晚安 苏州</p>
+        <script src="\assets\js\APlayer.min.js"> </script><p> <img src="http://img.blog.csdn.net/20180305182148138?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2VpeGluXzQxMDk5NzQ2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br> <a id="more"></a><br> 1、什么是ArrayList<br>ArrayList就是传说中的动态数组，用MSDN中的说法，就是Array的复杂版本，它提供了如下一些好处：<br>动态的增加和减少元素<br>实现了ICollection和IList接口<br>灵活的设置数组的大小</p>
+<p>2、如何使用ArrayList<br>最简单的例子：<br>ArrayList List = new ArrayList();<br>for( int i=0;i &lt;10;i++ ) //给数组增加10个Int元素<br>List.Add(i);<br>//..程序做一些处理<br>List.RemoveAt(5);//将第6个元素移除<br>for( int i=0;i &lt;3;i++ ) //再增加3个元素<br>List.Add(i+20);<br>Int32[] values = (Int32[])List.ToArray(typeof(Int32));//返回ArrayList包含的数组</p>
+<p>这是一个简单的例子，虽然没有包含ArrayList所有的方法，但是可以反映出ArrayList最常用的用法</p>
+<p>3、ArrayList重要的方法和属性<br>1）构造器<br>ArrayList提供了三个构造器：<br>public ArrayList();<br>默认的构造器，将会以默认（16）的大小来初始化内部的数组<br>public ArrayList(ICollection);<br>用一个ICollection对象来构造，并将该集合的元素添加到ArrayList<br>public ArrayList(int);<br>用指定的大小来初始化内部的数组</p>
+<p>2）IsSynchronized属性和ArrayList.Synchronized方法<br>IsSynchronized属性指示当前的ArrayList实例是否支持线程同步，而ArrayList.Synchronized静态方法则会返回一个ArrayList的线程同步的封装。<br>如果使用非线程同步的实例，那么在多线程访问的时候，需要自己手动调用lock来保持线程同步，例如：<br>ArrayList list = new ArrayList();<br>//…<br>lock( list.SyncRoot ) //当ArrayList为非线程包装的时候，SyncRoot属性其实就是它自己，但是为了满足ICollection的SyncRoot定义，这里还是使用SyncRoot来保持源代码的规范性<br>{<br>list.Add( “Add a Item” );<br>}</p>
+<p>如果使用ArrayList.Synchronized方法返回的实例，那么就不用考虑线程同步的问题，这个实例本身就是线程安全的，实际上ArrayList内部实现了一个保证线程同步的内部类，ArrayList.Synchronized返回的就是这个类的实例，它里面的每个属性都是用了lock关键字来保证线程同步。</p>
+<p>3）Count属性和Capacity属性<br>Count属性是目前ArrayList包含的元素的数量，这个属性是只读的。<br>Capacity属性是目前ArrayList能够包含的最大数量，可以手动的设置这个属性，但是当设置为小于Count值的时候会引发一个异常。</p>
+<p>4）Add、AddRange、Remove、RemoveAt、RemoveRange、Insert、InsertRange<br>这几个方法比较类似<br>Add方法用于添加一个元素到当前列表的末尾<br>AddRange方法用于添加一批元素到当前列表的末尾<br>Remove方法用于删除一个元素，通过元素本身的引用来删除<br>RemoveAt方法用于删除一个元素，通过索引值来删除<br>RemoveRange用于删除一批元素，通过指定开始的索引和删除的数量来删除<br>Insert用于添加一个元素到指定位置，列表后面的元素依次往后移动<br>InsertRange用于从指定位置开始添加一批元素，列表后面的元素依次往后移动</p>
+<p>另外，还有几个类似的方法：<br>Clear方法用于清除现有所有的元素<br>Contains方法用来查找某个对象在不在列表之中</p>
+<p>其他的我就不一一累赘了，大家可以查看MSDN，上面讲的更仔细<br>5）TrimSize方法<br>这个方法用于将ArrayList固定到实际元素的大小，当动态数组元素确定不在添加的时候，可以调用这个方法来释放空余的内存。<br>6）ToArray方法<br>这个方法把ArrayList的元素Copy到一个新的数组中。<br>4、ArrayList与数组转换<br>例1：<br>ArrayList List = new ArrayList();<br>List.Add(1);<br>List.Add(2);<br>List.Add(3);</p>
+<p>Int32[] values = (Int32[])List.ToArray(typeof(Int32));</p>
+<p>例2：<br>ArrayList List = new ArrayList();<br>List.Add(1);<br>List.Add(2);<br>List.Add(3);</p>
+<p>Int32[] values = new Int32[List.Count];<br>List.CopyTo(values);</p>
+<p>上面介绍了两种从ArrayList转换到数组的方法</p>
+<p>例3：<br>ArrayList List = new ArrayList();<br>List.Add( “string” );<br>List.Add( 1 );<br>//往数组中添加不同类型的元素</p>
+<p>object[] values = List.ToArray(typeof(object)); //正确<br>string[] values = (string[])List.ToArray(typeof(string)); //错误</p>
+<p>和数组不一样，因为可以转换为Object数组，所以往ArrayList里面添加不同类型的元素是不会出错的，但是当调用ArrayList方法的时候，要么传递所有元素都可以正确转型的类型或者Object类型，否则将会抛出无法转型的异常。</p>
+<p>5、ArrayList最佳使用建议<br>这一节我们来讨论ArrayList与数组的差别，以及ArrayList的效率问题<br>1）ArrayList是Array的复杂版本<br>ArrayList内部封装了一个Object类型的数组，从一般的意义来说，它和数组没有本质的差别，甚<br>定到实际元素的大小，当动态数组元素确定不在添加的时候，可以调用这个方法来释放空余的内存。<br>6）ToArray方法<br>这个方法把ArrayList的元素Copy到一个新的数组中。<br>4、ArrayList与数组转换<br>例1：<br>ArrayList List = new ArrayList();<br>List.Add(1);<br>List.Add(2);<br>List.Add(3);</p>
+<p>Int32[] values = (Int32[])List.ToArray(typeof(Int32));</p>
+<p>例2：<br>ArrayList List = new ArrayList();<br>List.Add(1);<br>List.Add(2);<br>List.Add(3);</p>
+<p>Int32[] values = new Int32[List.Count];<br>List.CopyTo(values);</p>
+<p>上面介绍了两种从ArrayList转换到数组的方法</p>
+<p>例3：<br>ArrayList List = new ArrayList();<br>List.Add( “string” );<br>List.Add( 1 );<br>//往数组中添加不同类型的元素</p>
+<p>object[] values = List.ToArray(typeof(object)); //正确<br>string[] values = (string[])List.ToArray(typeof(string)); //错误</p>
+<p>和数组不一样，因为可以转换为Object数组，所以往ArrayList里面添加不同类型的元素是不会出错的，但是当调用ArrayList方法的时候，要么传递所有元素都可以正确转型的类型或者Object类型，否则将会抛出无法转型的异常。</p>
+<p>5、ArrayList最佳使用建议<br>这一节我们来讨论ArrayList与数组的差别，以及ArrayList的效率问题<br>1）ArrayList是Array的复杂版本<br>ArrayList内部封装了一个Object类型的数组，从一般的意义来说，它和数组没有本质的差别，甚至于ArrayList的许多方法，如Index、IndexOf、Contains、Sort等都是在内部数组的基础上直接调用Array的对应方法。<br>2）内部的Object类型的影响<br>对于一般的引用类型来说，这部分的影响不是很大，但是对于值类型来说，往ArrayList里面添加和修改元素，都会引起装箱和拆箱的操作，频繁的操作可能会影响一部分效率。<br>但是恰恰对于大多数人，多数的应用都是使用值类型的数组。<br>消除这个影响是没有办法的，除非你不用它，否则就要承担一部分的效率损失，不过这部分的损失不会很大。<br>3）数组扩容<br>这是对ArrayList效率影响比较大的一个因素。<br>每当执行Add、AddRange、Insert、InsertRange等添加元素的方法，都会检查内部数组的容量是否不够了，如果是，它就会以当前容量的两倍来重新构建一个数组，将旧元素Copy到新数组中，然后丢弃旧数组，在这个临界点的扩容操作，应该来说是比较影响效率的。<br>例1：比如，一个可能有200个元素的数据动态添加到一个以默认16个元素大小创建的ArrayList中，将会经过：<br>16<em>2</em>2<em>2</em>2 = 256<br>四次的扩容才会满足最终的要求，那么如果一开始就以：<br>ArrayList List = new ArrayList( 210 );<br>的方式创建ArrayList，不仅会减少4次数组创建和Copy的操作，还会减少内存使用。</p>
+<p>例2：预计有30个元素而创建了一个ArrayList：<br>ArrayList List = new ArrayList(30);<br>在执行过程中，加入了31个元素，那么数组会扩充到60个元素的大小，而这时候不会有新的元素再增加进来，而且有没有调用TrimSize方法，那么就有1次扩容的操作，并且浪费了29个元素大小的空间。如果这时候，用：<br>ArrayList List = new ArrayList(40);<br>那么一切都解决了。<br>所以说，正确的预估可能的元素，并且在适当的时候调用TrimSize方法是提高ArrayList使用效率的重要途径。<br>4）频繁的调用IndexOf、Contains等方法（Sort、BinarySearch等方<br>法经过优化，不在此列）引起的效率损失<br>首先，我们要明确一点，ArrayList是动态数组，它不包括通过Key或者Value快速访问的算法，所以实际上调用IndexOf、Contains等方法是执行的简单的循环来查找元素，所以频繁的调用此类方法并不比你自己写循环并且稍作优化来的快，如果有这方面的要求，建议使用Hashtable或SortedList等键值对的集合。<br>ArrayList al=new ArrayList();</p>
+<p>al.Add(“How”);<br>al.Add(“are”);<br>al.Add(“you!”);</p>
+<p>al.Add(100);<br>al.Add(200);<br>al.Add(300);</p>
+<p>al.Add(1.2);<br>al.Add(22.8);</p>
+<p>使用ArrayList类<br>ArrayList类实现了List接口，由ArrayList类实现的List集合采用数组结构保存对象。数组结构的优点是便于对集合进行快速的随机访问，如果经常需要根据索引位置访问集合中的对象，使用由ArrayList类实现的List集合的效率较好。数组结构的缺点是向指定索引位置插入对象和删除指定索引位置对象的速度较慢，如果经常需要向List集合的指定索引位置插入对象，或者是删除List集合的指定索引位置的对象，使用由ArrayList类实现的List集合的效率则较低，并且插入或删除对象的索引位置越小效率越低，原因是当向指定的索引位置插入对象时，会同时将指定索引位置及之后的所有对象相应的向后移动一位，如图1所示。当删除指定索引位置的对象时，会同时将指定索引位置之后的所有对象相应的向前移动一位，如图2所示。如果在指定的索引位置之后有大量的对象，将严重影响对集合的操作效率。</p>
+<p>图1  向由ArrayList类实现的List集合中插入对象</p>
+<p>图2  从由ArrayList类实现的List集合中删除对象<br>就是因为用ArrayList类实现的List集合在插入和删除对象时存在这样的缺点，在编写例程06时才没有利用ArrayList类实例化List集合，下面看一个模仿经常需要随机访问集合中对象的例子。<br>在编写该例子时，用到了java.lang.Math类的random()方法，通过该方法可以得到一个小于10的double型随机数，将该随机数乘以5后再强制转换成整数，将得到一个0到4的整数，并随机访问由ArrayList类实现的List集合中该索引位置的对象，具体代码如下：<br>src\com\mwq\TestCollection.java关键代码：<br>public static void main(String[] args) {<br>String a = “A”, b = “B”, c = “C”, d = “D”, e = “E”;<br>List<string> list = new ArrayList<string>();<br>list.add(a);      // 索引位置为 0<br>list.add(b);      // 索引位置为 1<br>list.add(c);      // 索引位置为 2<br>list.add(d);      // 索引位置为 3<br>list.add(e);      // 索引位置为 4<br>System.out.println(list.get((int) (Math.random() * 5)));     // 模拟随机访问集合中的对象<br>}</string></string></p>
+<p><strong>我实际中的练习例子：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line">package code;  </span><br><span class="line">import java.util.ArrayList;  </span><br><span class="line">import java.util.Iterator;  </span><br><span class="line">public class SimpleTest &#123;  </span><br><span class="line">   </span><br><span class="line">   </span><br><span class="line"> public static void main(String []args)&#123;  </span><br><span class="line">    </span><br><span class="line">  ArrayList list1 = new ArrayList();    </span><br><span class="line">  list1.add(&quot;one&quot;);  </span><br><span class="line">  list1.add(&quot;two&quot;);  </span><br><span class="line">  list1.add(&quot;three&quot;);  </span><br><span class="line">  list1.add(&quot;four&quot;);  </span><br><span class="line">  list1.add(&quot;five&quot;);  </span><br><span class="line">  list1.add(0,&quot;zero&quot;);    </span><br><span class="line">  System.out.println(&quot;&lt;--list1中共有&gt;&quot; + list1.size()+ &quot;个元素&quot;);    </span><br><span class="line">  System.out.println(&quot;&lt;--list1中的内容:&quot; + list1 + &quot;--&gt;&quot;);  </span><br><span class="line">    </span><br><span class="line">  ArrayList list2 = new ArrayList();  </span><br><span class="line">  list2.add(&quot;Begin&quot;);  </span><br><span class="line">  list2.addAll(list1);  </span><br><span class="line">  list2.add(&quot;End&quot;);  </span><br><span class="line">  System.out.println(&quot;&lt;--list2中共有&gt;&quot; + list2.size()+ &quot;个元素&quot;);    </span><br><span class="line">  System.out.println(&quot;&lt;--list2中的内容:&quot; + list2 + &quot;--&gt;&quot;);  </span><br><span class="line">    </span><br><span class="line">  ArrayList list3 =  new ArrayList();  </span><br><span class="line">  list3.removeAll(list1);  </span><br><span class="line">  System.out.println(&quot;&lt;--list3中是否存在one: &quot;+ (list3.contains(&quot;one&quot;)? &quot;是&quot;:&quot;否&quot;)+ &quot;--&gt;&quot;);  </span><br><span class="line">    </span><br><span class="line">  list3.add(0,&quot;same element&quot;);  </span><br><span class="line">  list3.add(1,&quot;same element&quot;);  </span><br><span class="line">  System.out.println(&quot;&lt;--list3中共有&gt;&quot; + list3.size()+ &quot;个元素&quot;);    </span><br><span class="line">  System.out.println(&quot;&lt;--list3中的内容:&quot; + list3 + &quot;--&gt;&quot;);  </span><br><span class="line">  System.out.println(&quot;&lt;--list3中第一次出现same element的索引是&quot; + list3.indexOf(&quot;same element&quot;) + &quot;--&gt;&quot;);  </span><br><span class="line">  System.out.println(&quot;&lt;--list3中最后一次出现same element的索引是&quot; + list3.lastIndexOf(&quot;same element&quot;) + &quot;--&gt;&quot;);  </span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">  System.out.println(&quot;&lt;--使用Iterator接口访问list3-&gt;&quot;);  </span><br><span class="line">  Iterator it = list3.iterator();  </span><br><span class="line">  while(it.hasNext())&#123;  </span><br><span class="line">   String str = (String)it.next();  </span><br><span class="line">   System.out.println(&quot;&lt;--list3中的元素:&quot; + list3 + &quot;--&gt;&quot;);  </span><br><span class="line">  &#125;  </span><br><span class="line">    </span><br><span class="line">  System.out.println(&quot;&lt;--将list3中的same element修改为another element--&gt;&quot;);  </span><br><span class="line">  list3.set(0,&quot;another element&quot;);  </span><br><span class="line">  list3.set(1,&quot;another element&quot;);  </span><br><span class="line">     System.out.println(&quot;&lt;--将list3转为数组--&gt;&quot;);  </span><br><span class="line">    // Object []  array =(Object[]) list3.toArray(new   Object[list3.size()] );  </span><br><span class="line">     Object [] array = list3.toArray();  </span><br><span class="line">     for(int i = 0; i &lt; array.length ; i ++)&#123;  </span><br><span class="line">      String str = (String)array[i];  </span><br><span class="line">      System.out.println(&quot;array[&quot; + i + &quot;] = &quot;+ str);        </span><br><span class="line">     &#125;       </span><br><span class="line">       </span><br><span class="line">     System.out.println(&quot;&lt;---清空list3-&gt;&quot;);  </span><br><span class="line">     list3.clear();  </span><br><span class="line">     System.out.println(&quot;&lt;--list3中是否为空: &quot; + (list3.isEmpty()?&quot;是&quot;:&quot;否&quot;) + &quot;--&gt;&quot;);  </span><br><span class="line">     System.out.println(&quot;&lt;--list3中共有&gt;&quot; + list3.size()+ &quot;个元素&quot;);   </span><br><span class="line">    </span><br><span class="line">  //System.out.println(&quot;hello world!&quot;);  </span><br><span class="line"> &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如有侵权联系我删<br>感谢作者：lskyne<br>文章来源：<a href="http://blog.csdn.net/lskyne/article/details/8966657" target="_blank" rel="noopener">http://blog.csdn.net/lskyne/article/details/8966657</a></p>
 
       
 
@@ -266,11 +263,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">music</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">转载</a>
         		</li>
       		
 		</ul>
@@ -326,7 +319,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://www.xuanbosblog.com/2017/12/16/送你一碗励志的毒鸡汤？/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://www.xuanbosblog.com/2018/03/05/[转载文章]Java中ArrayList类详解/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -340,18 +333,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/01/01/从前不回头，以后不将就。2017再见，2018你好！/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          从前不回头，以后不将就。2017再见，2018你好！
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/12/12/使用Apache服务部署静态网站/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">使用Apache服务部署静态网站</div>
+    <a href="/2018/01/31/怎么才能活的简单快乐？/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">怎么才能活的简单快乐？</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -378,7 +362,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#雨天送你一碗毒鸡汤"><span class="toc-number">1.</span> <span class="toc-text">雨天送你一碗毒鸡汤</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.1.</span> <span class="toc-text"></span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-1"><span class="toc-number">1.2.</span> <span class="toc-text"></span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-2"><span class="toc-number">1.3.</span> <span class="toc-text"></span></a></li></ol></li></ol>
+                    目录，不存在的…
                     </div>
                 </span>
             </div>
@@ -388,6 +372,16 @@
 </aside>
 
 
+
+  
+  
+  
+
+  
+
+  
+
+  
 
 
           </div>
