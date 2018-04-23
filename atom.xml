@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.xuanbosblog.com/"/>
-  <updated>2018-01-31T07:06:03.331Z</updated>
+  <updated>2018-04-23T08:33:16.667Z</updated>
   <id>http://www.xuanbosblog.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C语言实现水仙花及杨辉三角</title>
+    <link href="http://www.xuanbosblog.com/2018/04/23/C%E8%AF%AD%E8%A8%80%E7%BC%96%E5%86%99%E6%B0%B4%E4%BB%99%E8%8A%B1%E6%95%B0%E5%8F%8A%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92/"/>
+    <id>http://www.xuanbosblog.com/2018/04/23/C语言编写水仙花数及杨辉三角/</id>
+    <published>2018-04-23T08:30:40.555Z</published>
+    <updated>2018-04-23T08:33:16.667Z</updated>
+    
+    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p><img src="http://img.blog.csdn.net/20180423162840355?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2VpeGluXzQxMDk5NzQ2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br><a id="more"></a></p><h2 id="C语言实现杨辉三角"><a href="#C语言实现杨辉三角" class="headerlink" title="C语言实现杨辉三角"></a>C语言实现杨辉三角</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">/* </span><br><span class="line">杨辉三角 </span><br><span class="line">1 </span><br><span class="line">1 1 </span><br><span class="line">1 2 1 </span><br><span class="line">1 3 3 1 </span><br><span class="line">1 4 6 4 1 </span><br><span class="line">1 5 10 10 5 1  </span><br><span class="line">*/  </span><br><span class="line">#include &quot;stdio.h&quot;  </span><br><span class="line">main()  </span><br><span class="line">&#123;  </span><br><span class="line">    int a[11][20],i,j;  </span><br><span class="line">    //初始化  </span><br><span class="line">    for(i=0;i&lt;11;i++)  </span><br><span class="line">     for(j=0;j&lt;20;j++)  </span><br><span class="line">      a[i][j]=0;  </span><br><span class="line">     //给数组附值  </span><br><span class="line">    for(i=0;i&lt;10;i++)  </span><br><span class="line">    &#123;  </span><br><span class="line">     for(j=0;j&lt;=i;j++)  </span><br><span class="line">     &#123;  </span><br><span class="line">      if(j&lt;1)a[i][j]=1;//开头的第一个数为1  </span><br><span class="line">      else if(i==0)break;  </span><br><span class="line">      else  </span><br><span class="line">      a[i][j]=a[i-1][j-1]+a[i-1][j];  </span><br><span class="line">                  //杨辉三角的规律  </span><br><span class="line">     &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">    //输出  </span><br><span class="line">    for(i=0;i&lt;10;i++)  </span><br><span class="line">    &#123;  </span><br><span class="line">     for(j=0;j&lt;=i;j++)   //在这里只打印到i表明只打印多少个数   </span><br><span class="line">      printf(&quot;%d &quot;,a[i][j]);  </span><br><span class="line">     printf(&quot;\n&quot;);  </span><br><span class="line">     &#125;</span><br></pre></td></tr></table></figure><hr><h2 id="C语言输出水仙花数"><a href="#C语言输出水仙花数" class="headerlink" title="C语言输出水仙花数"></a>C语言输出水仙花数</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    int num;</span><br><span class="line">        for (num = 100; num &lt;= 800; num++) &#123;</span><br><span class="line">            int a = num / 100;</span><br><span class="line">            int b = num % 100 / 10;</span><br><span class="line">            int c = num % 10;</span><br><span class="line">            if(a * a * a + b * b * b + c * c * c == num)&#123;</span><br><span class="line">                printf(&quot;%d\n&quot;, num);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;http://img.blog.csdn.net/20180423162840355?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2VpeGluXzQxMDk5NzQ2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast&quot; alt=&quot;这里写图片描述&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="C语言" scheme="http://www.xuanbosblog.com/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="杨辉三角" scheme="http://www.xuanbosblog.com/tags/%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92/"/>
+    
+      <category term="水仙花" scheme="http://www.xuanbosblog.com/tags/%E6%B0%B4%E4%BB%99%E8%8A%B1/"/>
+    
+  </entry>
   
   <entry>
     <title>送你一碗热乎乎的励志毒鸡汤？</title>
@@ -33,9 +57,9 @@
     </summary>
     
     
-      <category term="随笔" scheme="http://www.xuanbosblog.com/tags/%E9%9A%8F%E7%AC%94/"/>
-    
       <category term="music" scheme="http://www.xuanbosblog.com/tags/music/"/>
+    
+      <category term="随笔" scheme="http://www.xuanbosblog.com/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
@@ -232,9 +256,9 @@
     </summary>
     
     
-      <category term="Linux" scheme="http://www.xuanbosblog.com/tags/Linux/"/>
-    
       <category term="samba" scheme="http://www.xuanbosblog.com/tags/samba/"/>
+    
+      <category term="Linux" scheme="http://www.xuanbosblog.com/tags/Linux/"/>
     
   </entry>
   
