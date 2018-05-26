@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.xuanbosblog.com/"/>
-  <updated>2018-05-11T07:58:56.858Z</updated>
+  <updated>2018-05-26T08:37:28.879Z</updated>
   <id>http://www.xuanbosblog.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://www.xuanbosblog.com/2018/05/26/CSS%E6%A0%B7%E5%BC%8F%E8%A1%A8%E4%B9%8B%E6%9D%83%E9%87%8D%E4%BC%98%E5%85%88%E7%BA%A7%E9%97%AE%E9%A2%98/"/>
+    <id>http://www.xuanbosblog.com/2018/05/26/CSS样式表之权重优先级问题/</id>
+    <published>2018-05-26T08:21:47.942Z</published>
+    <updated>2018-05-26T08:37:28.879Z</updated>
+    
+    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><hr><p>title: CSS样式表之权重优先级问题<br>comments: false<br>toc: true</p><p>#categories:</p><h1 id="cat1"><a href="#cat1" class="headerlink" title="- cat1"></a>- cat1</h1><h1 id="cat2"><a href="#cat2" class="headerlink" title="- cat2"></a>- cat2</h1><p>tags:</p><h2 id="CSS"><a href="#CSS" class="headerlink" title="  - CSS"></a>  - CSS</h2><p>  <img src="https://i.loli.net/2018/05/26/5b091c2590778.jpg" alt="timg.jpg"></p><h1 id="CSS样式表之权重优先级问题"><a href="#CSS样式表之权重优先级问题" class="headerlink" title="CSS样式表之权重优先级问题"></a>CSS样式表之权重优先级问题</h1><p>通常可以将css的优先级由高到低分为6组：</p><ol><li>无条件优先的属性只需要在属性后面使用！important。它会覆盖页面内任何位置定义的元素样式。ie6不支持该属性。</li><li>在html中给元素标签加style，即内联样式。该方法会造成css难以管理，所以不推荐使用。<a id="more"></a></li><li>由一个或多个id选择器来定义。例如，#id{margin:0;}会覆盖.div{margin:0;}</li><li>由一个或多个类选择器、属性选择器、伪类选择器定义。如.div{margin:0;}会覆盖div{margin:0;}</li><li>由一个或多个类型选择器定义。如div{marigin:0;}覆盖*{margin:0;}</li><li>通配选择器，如*{padding:0;margin:0;}</li></ol><hr><p>#####如何计算选择器的特殊性呢？那就要用到选择器的权重计算了。<br>计算规则如下图：<br><img src="https://i.loli.net/2018/05/26/5b0916e8d6a12.png" alt="20170527074402219.png"><br>我们把特殊性分为4个等级，每一个等级代表一类选择器，没个等级的值相加得出选择器的权重。<br>4个等级的定义如下：<br>第一等级：代表内联样式，如style=””，权值为 1000<br>第二等级：代表id选择器，如#content，权值为100<br>第三等级：代表类，伪类和属性选择器，如.content，权值为10<br>第四等级：代表标签选择器和伪元素选择器，如div p，权值为1<br><strong>注意：通用选择器（*），子选择器（&gt;），和相邻同胞选择器（+）并不在这个等级中，所以他们的权值为0</strong></p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=356760&auto=0&height=66"></iframe>]]></content>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;title: CSS样式表之权重优先级问题&lt;br&gt;comments: false&lt;br&gt;toc: true&lt;/p&gt;
+&lt;p&gt;#categories:&lt;/p&gt;
+&lt;h1 id=&quot;cat1&quot;&gt;&lt;a href=&quot;#cat1&quot; class=&quot;headerlink&quot; title=&quot;- cat1&quot;&gt;&lt;/a&gt;- cat1&lt;/h1&gt;&lt;h1 id=&quot;cat2&quot;&gt;&lt;a href=&quot;#cat2&quot; class=&quot;headerlink&quot; title=&quot;- cat2&quot;&gt;&lt;/a&gt;- cat2&lt;/h1&gt;&lt;p&gt;tags:&lt;/p&gt;
+&lt;h2 id=&quot;CSS&quot;&gt;&lt;a href=&quot;#CSS&quot; class=&quot;headerlink&quot; title=&quot;  - CSS&quot;&gt;&lt;/a&gt;  - CSS&lt;/h2&gt;&lt;p&gt;  &lt;img src=&quot;https://i.loli.net/2018/05/26/5b091c2590778.jpg&quot; alt=&quot;timg.jpg&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;CSS样式表之权重优先级问题&quot;&gt;&lt;a href=&quot;#CSS样式表之权重优先级问题&quot; class=&quot;headerlink&quot; title=&quot;CSS样式表之权重优先级问题&quot;&gt;&lt;/a&gt;CSS样式表之权重优先级问题&lt;/h1&gt;&lt;p&gt;通常可以将css的优先级由高到低分为6组：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;无条件优先的属性只需要在属性后面使用！important。它会覆盖页面内任何位置定义的元素样式。ie6不支持该属性。&lt;/li&gt;
+&lt;li&gt;在html中给元素标签加style，即内联样式。该方法会造成css难以管理，所以不推荐使用。
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Adobe DreamweaverCS6破解版安装</title>
@@ -77,9 +103,9 @@
     </summary>
     
     
-      <category term="随笔" scheme="http://www.xuanbosblog.com/tags/%E9%9A%8F%E7%AC%94/"/>
-    
       <category term="music" scheme="http://www.xuanbosblog.com/tags/music/"/>
+    
+      <category term="随笔" scheme="http://www.xuanbosblog.com/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
