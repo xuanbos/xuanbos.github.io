@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.xuanbosblog.com/"/>
-  <updated>2018-09-16T13:16:53.248Z</updated>
+  <updated>2018-09-17T11:49:12.903Z</updated>
   <id>http://www.xuanbosblog.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaScript学习第二篇</title>
+    <link href="http://www.xuanbosblog.com/2018/09/17/JavaScript%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%BA%8C%E7%AF%87/"/>
+    <id>http://www.xuanbosblog.com/2018/09/17/JavaScript学习第二篇/</id>
+    <published>2018-09-17T11:48:21.786Z</published>
+    <updated>2018-09-17T11:49:12.903Z</updated>
+    
+    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p><img src="https://i.loli.net/2018/09/17/5b9f9469b9502.jpg" alt="101410emx4hnsuv5vhvqub.jpg"><br><a id="more"></a><br>JS写入Html输出</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document.write(&quot;hi，This is my first JS web&quot;);</span><br></pre></td></tr></table></figure><p>JavaScript 能够对事件作出反应。比如对按钮的点击：</p><h6 id="注意在alert里使用单引号"><a href="#注意在alert里使用单引号" class="headerlink" title="注意在alert里使用单引号"></a>注意在alert里使用单引号</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">&lt;button type=&quot;button&quot; onclick=&quot;alert(&apos;我跳出来啦&apos;)&quot;&gt;点击这里&lt;/button&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure><hr><p>用JS操作Html元素<br>使用 document.getElementById(id) 方法。</p><p>将page改为web，输出结果：My first js web</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">&lt;button type=&quot;button&quot; onclick=&quot;alert(&apos;我跳出来啦&apos;)&quot;&gt;点击这里&lt;/button&gt;</span><br><span class="line">&lt;h1 id=&quot;js&quot;&gt;My first js page!&lt;/h1&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">document.getElementById(&quot;js&quot;).innerHTML=&quot;My first js web&quot;;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><hr><p>在js中插入html标签</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">document.write(&quot;&lt;p&gt;这个p标签在js内使用&lt;/p&gt;&quot;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><hr><h2 id="JS声明变量"><a href="#JS声明变量" class="headerlink" title="JS声明变量"></a>JS声明变量</h2><h5 id="声明规则"><a href="#声明规则" class="headerlink" title="声明规则"></a>声明规则</h5><ol><li>变量必须以字母开头</li><li>变量也能以 $ 和 _ 符号开头（不过不推荐这么做）</li><li>变量名称对大小写敏感（y 和 Y 是不同的变量）</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">var x=8;</span><br><span class="line">var y=10;</span><br><span class="line">var z=x+y;</span><br><span class="line">document.write(z);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><h5 id="一条语句，多个变量"><a href="#一条语句，多个变量" class="headerlink" title="一条语句，多个变量"></a>一条语句，多个变量</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">var a=1,b=2,c=3;</span><br><span class="line">var d=a+b+c;</span><br><span class="line">document.write(&quot;d=&quot;+b);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><h1 id="JS声明字符串"><a href="#JS声明字符串" class="headerlink" title="JS声明字符串"></a>JS声明字符串</h1><h5 id="字符串声明可以引用单引号或双引号"><a href="#字符串声明可以引用单引号或双引号" class="headerlink" title="字符串声明可以引用单引号或双引号"></a>字符串声明可以引用单引号或双引号</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var str=&quot;hello&quot;;</span><br><span class="line">var str1=&apos;hello&apos;;</span><br><span class="line">var str3=&quot;&apos;hello&apos;&quot;;//document.wrtie输出&apos;hello&apos;</span><br><span class="line">var str4=&apos;&quot;hello&quot;&apos;;//document.write输出&quot;hello&quot;</span><br></pre></td></tr></table></figure><h1 id="JS布尔类型"><a href="#JS布尔类型" class="headerlink" title="JS布尔类型"></a>JS布尔类型</h1><h5 id="布尔（逻辑）只能有两个值：true-或-false。"><a href="#布尔（逻辑）只能有两个值：true-或-false。" class="headerlink" title="布尔（逻辑）只能有两个值：true 或 false。"></a>布尔（逻辑）只能有两个值：true 或 false。</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var x=false;</span><br><span class="line">var y=true;</span><br><span class="line">var z=x&amp;y;</span><br><span class="line">document.write(z);//输出为0 与运算 全真则为真</span><br></pre></td></tr></table></figure><h1 id="JS数组"><a href="#JS数组" class="headerlink" title="JS数组"></a>JS数组</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var area=new Array();</span><br><span class="line">area[0]=&quot;jiangsu&quot;;</span><br><span class="line">area[1]=&apos;shanghai&apos;;</span><br><span class="line">area[2]=&apos;nanjing&apos;;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var area=new Array(&quot;jiangsu&quot;,&quot;jiangsu&quot;,&quot;nanjing&quot;);</span><br></pre></td></tr></table></figure><h1 id="创建JS对象"><a href="#创建JS对象" class="headerlink" title="创建JS对象"></a>创建JS对象</h1><h5 id="JavaScript-中的几乎所有事务都是对象：字符串、数字、数组、日期、函数，等等。"><a href="#JavaScript-中的几乎所有事务都是对象：字符串、数字、数组、日期、函数，等等。" class="headerlink" title="JavaScript 中的几乎所有事务都是对象：字符串、数字、数组、日期、函数，等等。"></a>JavaScript 中的几乎所有事务都是对象：字符串、数字、数组、日期、函数，等等。</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">person=new Object();</span><br><span class="line">person.firstname=&quot;mike&quot;;</span><br><span class="line">person.lastname=&quot;mila&quot;;</span><br><span class="line">person.age=&quot;16&quot;;</span><br><span class="line">person.occuption=&quot;student&quot;;</span><br><span class="line">document.write(person.firstname+&quot; is &quot;+person.age+&quot;,his occupation is &quot;+person.occuption+&quot;.&quot;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/09/17/5b9f9469b9502.jpg&quot; alt=&quot;101410emx4hnsuv5vhvqub.jpg&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://www.xuanbosblog.com/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>JavaScript学习第一篇</title>
@@ -126,29 +146,6 @@
   </entry>
   
   <entry>
-    <title>送你一碗热乎乎的励志毒鸡汤？</title>
-    <link href="http://www.xuanbosblog.com/2018/03/29/%E9%80%81%E4%BD%A0%E4%B8%80%E7%A2%97%E5%8A%B1%E5%BF%97%E7%9A%84%E6%AF%92%E9%B8%A1%E6%B1%A4%EF%BC%9F/"/>
-    <id>http://www.xuanbosblog.com/2018/03/29/送你一碗励志的毒鸡汤？/</id>
-    <published>2018-03-29T09:52:45.987Z</published>
-    <updated>2018-01-31T07:06:03.331Z</updated>
-    
-    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><ul><li>因为今天苏州的天气让我的情绪有点失落！<br><img src="https://i.loli.net/2017/12/15/5a33f0e03ee4f.jpg" alt="0179be576177c50000018c1b582414.jpg@1280w_1l_2o_100sh.jpg"><a id="more"></a></li><li>我讨厌雨天又喜欢雨天，讨厌是因为下雨会使得大地上泥泞不堪，大地仅存的温度也在被搜刮，一切都变得冰冷潮湿。心情也随着这阴雨变得更加低落。</li><li>我有时又会喜欢雨天，下雨天让我觉得很有安全感，周围变得很安静，空气变得舒适。<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=451620178&auto=0&height=66"></iframe></li></ul><h1 id="雨天送你一碗毒鸡汤"><a href="#雨天送你一碗毒鸡汤" class="headerlink" title="雨天送你一碗毒鸡汤"></a>雨天送你一碗毒鸡汤</h1><ul><li><strong>是骄傲、虚荣、嫉妒和报复，支撑你走到今天。</strong></li></ul><p>你的成长依赖这些负的能量，而非天生的善良。请拥抱负能量，因为负能量赐予你赚钱的本事，毒辣的眼光，强大的内心和无畏的力量。那些抱着鸡汤的人，不是硬爹硬妈翅膀下的二代，就是含着金汤勺出生的投胎高手。他们丝毫不费力吃着鸡肉却学着父母让你们喝鸡汤，他们根本不让你们看到这个社会的规则和阴暗。如果你没有好的家境，却还听从权贵去品尝恶臭无比的鸡汤，简直就是在浪费你本来就卑微的人生。<br><img src="http://img1.imgtn.bdimg.com/it/u=3997060719,1263799790&amp;fm=27&amp;gp=0.jpg" alt="这里写图片描述"></p><hr><ul><li>同学聚会前，你很担心，以为那些出人头地的老同学会嘲笑你人生的失败。</li></ul><p>谁知人家却勾着肩膀回忆当年一起打球一起抄作业的日子，几杯酒下肚眼圈都红了。聚会结束后，那些有钱有势趣味相投的老同学仍然彼此保持着密切的联系，你帮我我帮你。而你又回到自己的日子，好像做了一场梦。朋友，老同学，老同事，聚餐，忆苦思甜，仿佛一起快乐的日子就在昨天，但没人乐意回忆聚餐后的发生的事。现实就是现实，任何老同学，老同事都无法阻挡现实的大潮。如果你的圈子很卑微，倒不如不去参加聚餐，何必让自己的卑微化作笑柄。</p><h2 id=""><a href="#" class="headerlink" title=""></a><img src="http://img0.imgtn.bdimg.com/it/u=670915793,1011682399&amp;fm=27&amp;gp=0.jpg" alt="这里写图片描述"></h2><ul><li><strong>在中国人传统的概念里，从来没有平等和互相尊重这回事。</strong></li></ul><p>不是你跪着，就是我跪着，那才是中国人际交往的稳定状态。等级的划分才是最传统的东西，连孔子那帮人都看不起奴隶，你为什么还盲目做一个只会对领导言听计从的奴隶？聪明的人是极少数的，这极少数的人每天都在绞尽脑汁的考虑，如何打破等级的壁垒。他们从来不漫无目的的努力，也不瞎忙，他们每一步棋都会让自己往前走一大步。提升是需要原罪的，善良的人在这个社会没有出头之日，只要不是杀人放火，违法乱纪，那么你所做的一切损人利己的事都是正确伟大的。</p><h2 id="-1"><a href="#-1" class="headerlink" title=""></a><img src="http://i9.download.fd.pchome.net/t_600x1024/g1/M00/0A/06/oYYBAFPV_8-IKaDTAANqlYhsy24AAByegMZrRYAA2qt945.jpg" alt="这里写图片描述"></h2><ul><li><strong>什么叫乐观？我觉得乐观就是你本来过得就不好却还在那里傻乐。</strong></li></ul><p>失败者对于现状的妥协和自我安慰，这些都叫乐观。经常乐观的人就是经常失败，居无定所，没有人生方向的人。有钱人不乐观，有钱人也不需要乐观，钞票一甩，那叫乐呵；领导也不乐观，领导喜欢开会让下属保持乐观，然后还没下班就和有钱人的圈子去找乐，那叫乐子。别抱着乐观以为自己就是天下最努力最勤奋的人，人傻一时别傻一辈子。<br><img src="http://p2.gexing.com/shaitu/20120925/1948/506199f4e6580.png" alt="这里写图片描述"></p><hr><ul><li><strong>不要把自己的软弱展现给别人看，不要把自己的狼狈述说给别人听。</strong></li></ul><p>因为根本没有人会觉的你很可怜， 只会觉的你很无能很没用。大多数人都很反感对方吐槽自己的生活不容易，自己被屈才了等等。愿意听你牢骚的人，也是跟你一样失败的人。失败的人和失败的人聚到一起，一起埋怨公司埋怨这个世界，看起来真是可笑加无聊。所以管住你自己的嘴巴，交流你的成功，不要沟通你的失败。当你一直都在自信你的成功，你就会越来越成功，当你一直在计较自己的失败，你必然会越来越失败。</p><h2 id="-2"><a href="#-2" class="headerlink" title=""></a><img src="http://pic2.duowan.com/news/1104/166614413890/166629298443.jpg" alt="这里写图片描述"></h2><p>The end<br>不管鸡汤毒不毒，喝口白开水好好走路吧。<br><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1513364809273&amp;di=42442bcd9de393e9f920a9e277824469&amp;imgtype=0&amp;src=http://img3.duitang.com/uploads/item/201604/08/20160408131036_sTGFj.jpeg" alt="这里写图片描述"><br>晚安 苏州</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;因为今天苏州的天气让我的情绪有点失落！&lt;br&gt;&lt;img src=&quot;https://i.loli.net/2017/12/15/5a33f0e03ee4f.jpg&quot; alt=&quot;0179be576177c50000018c1b582414.jpg@1280w_1l_2o_100sh.jpg&quot;&gt;
-    
-    </summary>
-    
-    
-      <category term="随笔" scheme="http://www.xuanbosblog.com/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-      <category term="music" scheme="http://www.xuanbosblog.com/tags/music/"/>
-    
-  </entry>
-  
-  <entry>
     <title>怎么才能活的简单快乐？</title>
     <link href="http://www.xuanbosblog.com/2018/03/29/%E6%80%8E%E4%B9%88%E6%89%8D%E8%83%BD%E6%B4%BB%E7%9A%84%E7%AE%80%E5%8D%95%E5%BF%AB%E4%B9%90%EF%BC%9F/"/>
     <id>http://www.xuanbosblog.com/2018/03/29/怎么才能活的简单快乐？/</id>
@@ -168,6 +165,29 @@
       <category term="随笔" scheme="http://www.xuanbosblog.com/tags/%E9%9A%8F%E7%AC%94/"/>
     
       <category term="生活" scheme="http://www.xuanbosblog.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>送你一碗热乎乎的励志毒鸡汤？</title>
+    <link href="http://www.xuanbosblog.com/2018/03/29/%E9%80%81%E4%BD%A0%E4%B8%80%E7%A2%97%E5%8A%B1%E5%BF%97%E7%9A%84%E6%AF%92%E9%B8%A1%E6%B1%A4%EF%BC%9F/"/>
+    <id>http://www.xuanbosblog.com/2018/03/29/送你一碗励志的毒鸡汤？/</id>
+    <published>2018-03-29T09:52:45.987Z</published>
+    <updated>2018-01-31T07:06:03.331Z</updated>
+    
+    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><ul><li>因为今天苏州的天气让我的情绪有点失落！<br><img src="https://i.loli.net/2017/12/15/5a33f0e03ee4f.jpg" alt="0179be576177c50000018c1b582414.jpg@1280w_1l_2o_100sh.jpg"><a id="more"></a></li><li>我讨厌雨天又喜欢雨天，讨厌是因为下雨会使得大地上泥泞不堪，大地仅存的温度也在被搜刮，一切都变得冰冷潮湿。心情也随着这阴雨变得更加低落。</li><li>我有时又会喜欢雨天，下雨天让我觉得很有安全感，周围变得很安静，空气变得舒适。<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=451620178&auto=0&height=66"></iframe></li></ul><h1 id="雨天送你一碗毒鸡汤"><a href="#雨天送你一碗毒鸡汤" class="headerlink" title="雨天送你一碗毒鸡汤"></a>雨天送你一碗毒鸡汤</h1><ul><li><strong>是骄傲、虚荣、嫉妒和报复，支撑你走到今天。</strong></li></ul><p>你的成长依赖这些负的能量，而非天生的善良。请拥抱负能量，因为负能量赐予你赚钱的本事，毒辣的眼光，强大的内心和无畏的力量。那些抱着鸡汤的人，不是硬爹硬妈翅膀下的二代，就是含着金汤勺出生的投胎高手。他们丝毫不费力吃着鸡肉却学着父母让你们喝鸡汤，他们根本不让你们看到这个社会的规则和阴暗。如果你没有好的家境，却还听从权贵去品尝恶臭无比的鸡汤，简直就是在浪费你本来就卑微的人生。<br><img src="http://img1.imgtn.bdimg.com/it/u=3997060719,1263799790&amp;fm=27&amp;gp=0.jpg" alt="这里写图片描述"></p><hr><ul><li>同学聚会前，你很担心，以为那些出人头地的老同学会嘲笑你人生的失败。</li></ul><p>谁知人家却勾着肩膀回忆当年一起打球一起抄作业的日子，几杯酒下肚眼圈都红了。聚会结束后，那些有钱有势趣味相投的老同学仍然彼此保持着密切的联系，你帮我我帮你。而你又回到自己的日子，好像做了一场梦。朋友，老同学，老同事，聚餐，忆苦思甜，仿佛一起快乐的日子就在昨天，但没人乐意回忆聚餐后的发生的事。现实就是现实，任何老同学，老同事都无法阻挡现实的大潮。如果你的圈子很卑微，倒不如不去参加聚餐，何必让自己的卑微化作笑柄。</p><h2 id=""><a href="#" class="headerlink" title=""></a><img src="http://img0.imgtn.bdimg.com/it/u=670915793,1011682399&amp;fm=27&amp;gp=0.jpg" alt="这里写图片描述"></h2><ul><li><strong>在中国人传统的概念里，从来没有平等和互相尊重这回事。</strong></li></ul><p>不是你跪着，就是我跪着，那才是中国人际交往的稳定状态。等级的划分才是最传统的东西，连孔子那帮人都看不起奴隶，你为什么还盲目做一个只会对领导言听计从的奴隶？聪明的人是极少数的，这极少数的人每天都在绞尽脑汁的考虑，如何打破等级的壁垒。他们从来不漫无目的的努力，也不瞎忙，他们每一步棋都会让自己往前走一大步。提升是需要原罪的，善良的人在这个社会没有出头之日，只要不是杀人放火，违法乱纪，那么你所做的一切损人利己的事都是正确伟大的。</p><h2 id="-1"><a href="#-1" class="headerlink" title=""></a><img src="http://i9.download.fd.pchome.net/t_600x1024/g1/M00/0A/06/oYYBAFPV_8-IKaDTAANqlYhsy24AAByegMZrRYAA2qt945.jpg" alt="这里写图片描述"></h2><ul><li><strong>什么叫乐观？我觉得乐观就是你本来过得就不好却还在那里傻乐。</strong></li></ul><p>失败者对于现状的妥协和自我安慰，这些都叫乐观。经常乐观的人就是经常失败，居无定所，没有人生方向的人。有钱人不乐观，有钱人也不需要乐观，钞票一甩，那叫乐呵；领导也不乐观，领导喜欢开会让下属保持乐观，然后还没下班就和有钱人的圈子去找乐，那叫乐子。别抱着乐观以为自己就是天下最努力最勤奋的人，人傻一时别傻一辈子。<br><img src="http://p2.gexing.com/shaitu/20120925/1948/506199f4e6580.png" alt="这里写图片描述"></p><hr><ul><li><strong>不要把自己的软弱展现给别人看，不要把自己的狼狈述说给别人听。</strong></li></ul><p>因为根本没有人会觉的你很可怜， 只会觉的你很无能很没用。大多数人都很反感对方吐槽自己的生活不容易，自己被屈才了等等。愿意听你牢骚的人，也是跟你一样失败的人。失败的人和失败的人聚到一起，一起埋怨公司埋怨这个世界，看起来真是可笑加无聊。所以管住你自己的嘴巴，交流你的成功，不要沟通你的失败。当你一直都在自信你的成功，你就会越来越成功，当你一直在计较自己的失败，你必然会越来越失败。</p><h2 id="-2"><a href="#-2" class="headerlink" title=""></a><img src="http://pic2.duowan.com/news/1104/166614413890/166629298443.jpg" alt="这里写图片描述"></h2><p>The end<br>不管鸡汤毒不毒，喝口白开水好好走路吧。<br><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1513364809273&amp;di=42442bcd9de393e9f920a9e277824469&amp;imgtype=0&amp;src=http://img3.duitang.com/uploads/item/201604/08/20160408131036_sTGFj.jpeg" alt="这里写图片描述"><br>晚安 苏州</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;因为今天苏州的天气让我的情绪有点失落！&lt;br&gt;&lt;img src=&quot;https://i.loli.net/2017/12/15/5a33f0e03ee4f.jpg&quot; alt=&quot;0179be576177c50000018c1b582414.jpg@1280w_1l_2o_100sh.jpg&quot;&gt;
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="http://www.xuanbosblog.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="music" scheme="http://www.xuanbosblog.com/tags/music/"/>
     
   </entry>
   
@@ -436,28 +456,6 @@
     
     
       <category term="C语言" scheme="http://www.xuanbosblog.com/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C语言实现冒泡排序</title>
-    <link href="http://www.xuanbosblog.com/2017/11/28/C%E8%AF%AD%E8%A8%80%E5%AE%9E%E7%8E%B0%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/"/>
-    <id>http://www.xuanbosblog.com/2017/11/28/C语言实现冒泡排序/</id>
-    <published>2017-11-28T10:18:23.000Z</published>
-    <updated>2017-11-28T10:23:43.332Z</updated>
-    
-    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p>冒泡排序：<br>冒泡排序的的优点是好理解，稳定，再就是空间复杂度低，不需要额外开辟数组元素的临时保存控件，当然了，编写起来也容易。<br><a id="more"></a><br>其算法很简单，就是比较数组相邻的两个值，把大的像泡泡一样“冒”到数组后面去，一共要执行N的平方除以2这么多次的比较和交换的操作（N为数组元素），其复杂度为Ο(n²)，如图：<br><img src="https://i.loli.net/2017/11/28/5a1d36e5d2fd4.png" alt="ds_sort_bubbler.png"></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">从小到大升序排列</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">inta[]=&#123;8,4,10,12,9&#125;;</span><br><span class="line">int i,j,k;</span><br><span class="line">for(i=0;i&lt;5;i++)</span><br><span class="line">&#123;</span><br><span class="line">for(j=0;j&lt;5-i;j++)</span><br><span class="line">&#123;</span><br><span class="line">if(a[j]&gt;a[j+1])</span><br><span class="line">&#123;k=a[j+1];</span><br><span class="line">a[j+1]=a[j];</span><br><span class="line">a[j]=k;</span><br><span class="line">&#125;</span><br><span class="line">&#125;for (i&lt;0;i&lt;5;i++)</span><br><span class="line">&#123;</span><br><span class="line">printf(&quot;%5d&quot;,a[i]); </span><br><span class="line">&#125;</span><br><span class="line">return 0;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">从大到小降序排列</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">int a[6]=&#123;10,8,9,4,5,6&#125;;</span><br><span class="line">int i,j,k;</span><br><span class="line">for(i=0;i&lt;6;i++)</span><br><span class="line">&#123;</span><br><span class="line">for (j=0;j&lt;j-i;j++)</span><br><span class="line">&#123;</span><br><span class="line">if(a[j]&lt;a[j+1])</span><br><span class="line">&#123;</span><br><span class="line">k=a[j+1];</span><br><span class="line">a[j+1]=a[j];</span><br><span class="line">a[j]=k;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">for(i=0;i&lt;6;i++)</span><br><span class="line">&#123;printf(&quot;%3d&quot;,a[i]);</span><br><span class="line">&#125;</span><br><span class="line">return 0;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;冒泡排序：&lt;br&gt;冒泡排序的的优点是好理解，稳定，再就是空间复杂度低，不需要额外开辟数组元素的临时保存控件，当然了，编写起来也容易。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="C语言" scheme="http://www.xuanbosblog.com/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
-      <category term="冒泡排序" scheme="http://www.xuanbosblog.com/tags/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/"/>
     
   </entry>
   
