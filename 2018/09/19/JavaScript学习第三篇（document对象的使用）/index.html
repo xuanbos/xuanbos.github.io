@@ -6,14 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.xuanbosblog.com">
-  <title>Archives: 2018 | Xxxuan的博客</title>
+  <title>JavaScript学习第三篇（document对象的使用） | Xxxuan的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Xxxuan的博客">
-<meta property="og:url" content="http://www.xuanbosblog.com/archives/2018/index.html">
+  <meta name="keywords" content="JavaScript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript学习第三篇（document对象的使用）">
+<meta property="og:url" content="http://www.xuanbosblog.com/2018/09/19/JavaScript学习第三篇（document对象的使用）/index.html">
 <meta property="og:site_name" content="Xxxuan的博客">
+<meta property="og:image" content="https://i.loli.net/2018/09/19/5ba20894c7a28.jpg">
+<meta property="og:updated_time" content="2018-09-19T08:32:59.009Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Xxxuan的博客">
+<meta name="twitter:title" content="JavaScript学习第三篇（document对象的使用）">
+<meta name="twitter:image" content="https://i.loli.net/2018/09/19/5ba20894c7a28.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Xxxuan的博客" type="application/atom+xml">
   
@@ -162,36 +166,99 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-JavaScript学习第三篇（document对象的使用）" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      JavaScript学习第三篇（document对象的使用）
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/09/19/JavaScript学习第三篇（document对象的使用）/" class="archive-article-date">
+
+        
+        <a href="/2018/09/19/JavaScript学习第三篇（document对象的使用）/" class="archive-article-date">
   	<time datetime="2018-09-19T08:24:21.965Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-19</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/19/JavaScript学习第三篇（document对象的使用）/">JavaScript学习第三篇（document对象的使用）</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <script src="\assets\js\APlayer.min.js"> </script><p><img src="https://i.loli.net/2018/09/19/5ba20894c7a28.jpg" alt="469.jpg"><br><a id="more"></a></p>
+<p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=22712173&auto=1&height=66"></iframe></p>
+<h4 id="在浏览器中，与用户进行数据交换都是通过客户端的javascript代码来实现的，而完成这些交互工作大多数是document对象及其部件进行的，因此document对象是一个比较重要的对象。"><a href="#在浏览器中，与用户进行数据交换都是通过客户端的javascript代码来实现的，而完成这些交互工作大多数是document对象及其部件进行的，因此document对象是一个比较重要的对象。" class="headerlink" title="在浏览器中，与用户进行数据交换都是通过客户端的javascript代码来实现的，而完成这些交互工作大多数是document对象及其部件进行的，因此document对象是一个比较重要的对象。"></a>在浏览器中，与用户进行数据交换都是通过客户端的javascript代码来实现的，而完成这些交互工作大多数是document对象及其部件进行的，因此document对象是一个比较重要的对象。</h4><h4 id="document对象主要属性："><a href="#document对象主要属性：" class="headerlink" title="document对象主要属性："></a>document对象主要属性：</h4><ul>
+<li>document.title                 //设置文档标题等价于HTML的<title>标签</title></li>
+<li>document.bgColor               //设置页面背景色</li>
+<li>document.fgColor               //设置前景色(文本颜色)</li>
+<li>document.linkColor             //未点击过的链接颜色</li>
+<li>document.alinkColor            //激活链接(焦点在此链接上)的颜色</li>
+<li>document.vlinkColor            //已点击过的链接颜色</li>
+<li>document.URL                   //设置URL属性从而在同一窗口打开另一网页</li>
+<li>document.fileCreatedDate       //文件建立日期，只读属性</li>
+<li>document.fileModifiedDate      //文件修改日期，只读属性</li>
+<li>document.fileSize              //文件大小，只读属性</li>
+<li>document.cookie                //设置和读出cookie</li>
+<li>document.charset               //设置字符集 简体中文:gb2312</li>
+</ul>
+<hr>
+<h4 id="常用对象方法"><a href="#常用对象方法" class="headerlink" title="常用对象方法:"></a>常用对象方法:</h4><ul>
+<li>document.write()                      //动态向页面写入内容</li>
+<li>document.createElement(Tag)           //创建一个html标签对象</li>
+<li>document.getElementById(ID)           //获得指定ID值的对象</li>
+<li>document.getElementsByName(Name)      //获得指定Name值的对象</li>
+<li>document.getElementsByClassName(classname)    获得指定类名的对象</li>
+<li></li>
+</ul>
+<p>—————————————华丽分割线——————————————————</p>
+<h3 id="使用例子"><a href="#使用例子" class="headerlink" title="使用例子"></a>使用例子</h3><h4 id="1-输入图片序号将其隐藏"><a href="#1-输入图片序号将其隐藏" class="headerlink" title="1. 输入图片序号将其隐藏"></a>1. 输入图片序号将其隐藏</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">&lt;button&gt;点击隐藏图片&lt;/button&gt;&lt;br&gt;</span><br><span class="line">&lt;img src=&quot;img/a.jpg&quot; alt=&quot;&quot;&gt;</span><br><span class="line">&lt;img src=&quot;img/b.jpg&quot; alt=&quot;&quot;&gt;</span><br><span class="line">&lt;img src=&quot;img/c.jpg&quot; alt=&quot;&quot;&gt;</span><br><span class="line">&lt;img src=&quot;img/a.jpg&quot; alt=&quot;&quot;&gt;</span><br><span class="line">&lt;img src=&quot;img/b.jpg&quot; alt=&quot;&quot;&gt;</span><br><span class="line">&lt;img src=&quot;img/c.jpg&quot; alt=&quot;&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">	var myimg=document.getElementsByTagName(&quot;img&quot;);</span><br><span class="line">	var btn=document.getElementsByTagName(&quot;button&quot;)[0];</span><br><span class="line"></span><br><span class="line">	btn.onclick=function fun()&#123;</span><br><span class="line">		var mynum=window.prompt(&quot;请输入你想要隐藏图片的序号&quot;,0)*1-1;</span><br><span class="line">		myimg[mynum].style.display=&quot;none&quot;;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="2-修改样式"><a href="#2-修改样式" class="headerlink" title="2. 修改样式"></a>2. 修改样式</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">&lt;p style=&quot;color:blue;font-size:50px;&quot;&gt;p标签&lt;/p&gt;</span><br><span class="line">&lt;p&gt;p标签&lt;/p&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">	var myp=document.getElementsByTagName(&apos;p&apos;)[1];</span><br><span class="line">	myp.style.color=&quot;red&quot;;</span><br><span class="line">	myp.style.fontSize=&quot;60px&quot;;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="3-简易树形菜单"><a href="#3-简易树形菜单" class="headerlink" title="3.简易树形菜单"></a>3.简易树形菜单</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	a&#123;</span><br><span class="line">		text-decoration: none;</span><br><span class="line">/*		color:#333;*/</span><br><span class="line">	&#125;</span><br><span class="line">	&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;ul&gt;</span><br><span class="line">	&lt;li class=&quot;list&quot;&gt;</span><br><span class="line">		&lt;a href=&quot;javascript:;&quot;&gt;一级标题&lt;/a&gt;</span><br><span class="line">		&lt;ul style=&quot;display:none;&quot;&gt;</span><br><span class="line">			&lt;li&gt;二级标题&lt;/li&gt;</span><br><span class="line">			&lt;li&gt;二级标题&lt;/li&gt;</span><br><span class="line">			&lt;li&gt;二级标题&lt;/li&gt;</span><br><span class="line">		&lt;/ul&gt;</span><br><span class="line">	&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line">&lt;ul&gt;</span><br><span class="line">	&lt;li class=&quot;list&quot;&gt;</span><br><span class="line">		&lt;a href=&quot;javascript:;&quot;&gt;一级标题&lt;/a&gt;</span><br><span class="line">		&lt;ul style=&quot;display:none;&quot;&gt;</span><br><span class="line">			&lt;li&gt;二级标题&lt;/li&gt;</span><br><span class="line">			&lt;li&gt;二级标题&lt;/li&gt;</span><br><span class="line">			&lt;li&gt;二级标题&lt;/li&gt;</span><br><span class="line">		&lt;/ul&gt;</span><br><span class="line">	&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line">&lt;ul&gt;</span><br><span class="line">	&lt;li class=&quot;list&quot;&gt;</span><br><span class="line">		&lt;a href=&quot;javascript:;&quot;&gt;一级标题&lt;/a&gt;</span><br><span class="line">		&lt;ul style=&quot;display:none;&quot;&gt;</span><br><span class="line">			&lt;li&gt;二级标题&lt;/li&gt;</span><br><span class="line">			&lt;li&gt;二级标题&lt;/li&gt;</span><br><span class="line">			&lt;li&gt;二级标题&lt;/li&gt;</span><br><span class="line">		&lt;/ul&gt;</span><br><span class="line">	&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">	var mylist=document.getElementsByClassName(&quot;list&quot;);</span><br><span class="line">	for (var i = 0; i &lt;mylist.length; i++) &#123;</span><br><span class="line">		fun(mylist[i]);</span><br><span class="line">	&#125;</span><br><span class="line">	function fun(dy)&#123;</span><br><span class="line">		var mya=dy.getElementsByTagName(&quot;a&quot;)[0];</span><br><span class="line">		var myul=dy.getElementsByTagName(&quot;ul&quot;)[0];</span><br><span class="line">		mya.onclick=function()&#123;</span><br><span class="line">			if(myul.style.display==&quot;none&quot;)&#123;</span><br><span class="line">				myul.style.display=&quot;block&quot;;</span><br><span class="line">			&#125;</span><br><span class="line">			else</span><br><span class="line">			&#123;</span><br><span class="line">				myul.style.display=&quot;none&quot;;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="4-tab切换显示内容"><a href="#4-tab切换显示内容" class="headerlink" title="4. tab切换显示内容"></a>4. tab切换显示内容</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">		*&#123;</span><br><span class="line">			margin: 0;</span><br><span class="line">			padding: 0;</span><br><span class="line">			box-sizing: border-box;</span><br><span class="line">		&#125;</span><br><span class="line">		#first&#123;</span><br><span class="line">			list-style: none;</span><br><span class="line">			width: 200px;</span><br><span class="line">			height: 50px;</span><br><span class="line">			border:2px solid blue;</span><br><span class="line">		&#125;</span><br><span class="line">		#first li&#123;</span><br><span class="line">			width: 98px;</span><br><span class="line">			height: 46px;</span><br><span class="line">			float: left;</span><br><span class="line">			display: inline-block;</span><br><span class="line">			line-height: 50px;</span><br><span class="line">			background-color: pink;</span><br><span class="line">			font-size: 30px;</span><br><span class="line">		&#125;</span><br><span class="line">		#first li:first-child&#123;</span><br><span class="line">			border-right: 2px solid blue;</span><br><span class="line">		&#125;</span><br><span class="line">		div&#123;</span><br><span class="line">			width: 200px;</span><br><span class="line">			height: 200px;</span><br><span class="line">			background-color: orange;</span><br><span class="line">			border:2px solid blue;</span><br><span class="line">		&#125;</span><br><span class="line">		div ul li&#123;	</span><br><span class="line">				width: 200px;</span><br><span class="line">				</span><br><span class="line">				</span><br><span class="line">			/*	white-space:normal; */</span><br><span class="line">       			word-break : break-all; </span><br><span class="line">       			word-wrap: break-word;</span><br><span class="line">		&#125;</span><br><span class="line">	&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;ul id=&quot;first&quot;&gt;</span><br><span class="line">	&lt;li&gt;tab1&lt;/li&gt;</span><br><span class="line">	&lt;li&gt;tab2&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line">&lt;div&gt;</span><br><span class="line">	&lt;ul id=&quot;second&quot;&gt;</span><br><span class="line">		&lt;li&gt;li1111111111111111111111111111111111111111111111111111111&lt;/li&gt;</span><br><span class="line">		&lt;li style=&quot;display:none;&quot;&gt;li2222222222222222222222222222222222222222222222222222222&lt;/li&gt;</span><br><span class="line">	&lt;/ul&gt;</span><br><span class="line">&lt;/div&gt; </span><br><span class="line">&lt;script&gt;</span><br><span class="line">	var myfirul=document.getElementById(&quot;first&quot;).getElementsByTagName(&apos;li&apos;);</span><br><span class="line">	// var mylist=document.getElementsByTagName(&quot;li&quot;);</span><br><span class="line">	var mysecul=document.getElementById(&quot;second&quot;).getElementsByTagName(&apos;li&apos;);</span><br><span class="line">	for (var i = 0; i &lt;myfirul.length; i++) &#123;</span><br><span class="line">		myfirul[i].index=i;</span><br><span class="line">		myfirul[i].onclick=function fun()&#123;</span><br><span class="line">			for (var i = 0; i&lt;mysecul.length; i++) &#123;</span><br><span class="line">				mysecul[i].style.display=&quot;none&quot;;</span><br><span class="line">			&#125;</span><br><span class="line">		mysecul[this.index].style.display=&quot;block&quot;;</span><br><span class="line">		// alert(this.index);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="5-新增事件"><a href="#5-新增事件" class="headerlink" title="5. 新增事件"></a>5. 新增事件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	div&#123;</span><br><span class="line">		width: 100px;</span><br><span class="line">		height: 100px;</span><br><span class="line">		background-color: pink;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;div&gt;&lt;/div&gt;</span><br><span class="line">&lt;input type=&quot;&quot; name=&quot;&quot;&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">	var mydiv=document.getElementsByTagName(&quot;div&quot;)[0];</span><br><span class="line">	mydiv.onmouseover=function fun()&#123;</span><br><span class="line">		console.log(&quot;移上去了&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">	mydiv.onmouseout=function fun()&#123;</span><br><span class="line">		console.log(&quot;移出去了&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">	mydiv.ondblclick=function fun()&#123;</span><br><span class="line">		console.log(&quot;双击了div&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">	var inp=document.getElementsByTagName(&quot;input&quot;)[0];</span><br><span class="line">	inp.onblur=function fun()&#123;</span><br><span class="line">		console.log(&quot;失去焦点了&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="6-轮播图"><a href="#6-轮播图" class="headerlink" title="6. 轮播图"></a>6. 轮播图</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">		*&#123;</span><br><span class="line">			margin: 0;</span><br><span class="line">			padding: 0;</span><br><span class="line">		&#125;</span><br><span class="line">		body&#123;</span><br><span class="line">			overflow: hidden;</span><br><span class="line">		&#125;</span><br><span class="line">		img&#123;width: 100%;&#125;</span><br><span class="line">		li&#123;</span><br><span class="line">			list-style:none;</span><br><span class="line">			float: left;</span><br><span class="line">		&#125;</span><br><span class="line">	&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;ul id=&quot;myul&quot;&gt;</span><br><span class="line">		&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;img/1.jpg&quot;&gt;&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">		&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;img/2.jpg&quot;&gt;&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">		&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;img/3.jpg&quot;&gt;&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">	&lt;/ul&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">	var myUl=document.getElementById(&quot;myul&quot;);</span><br><span class="line">	var myli=document.getElementsByTagName(&quot;li&quot;);</span><br><span class="line">	var mywid=window.screen.availWidth;</span><br><span class="line">	console.log(mywid);</span><br><span class="line">	console.log(myli.length);</span><br><span class="line">	console.log(myul.length);</span><br><span class="line"></span><br><span class="line">	// myul.style.width=mywid*myli.length+&quot;px&quot;;</span><br><span class="line">	myUl.style.width = mywid*myli.length+&quot;px&quot;;</span><br><span class="line">	for (var i = 0; i &lt; myli.length; i++) &#123;</span><br><span class="line">		myli[i].style.width=mywid+&quot;px&quot;;</span><br><span class="line">	&#125;</span><br><span class="line">	var i=0;</span><br><span class="line">	function fun()&#123;</span><br><span class="line">		myUl.style.marginLeft=-i+&quot;px&quot;;</span><br><span class="line">		i+=mywid;</span><br><span class="line">		if(i&gt;mywid*myli.length)&#123;</span><br><span class="line">			i=0;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">	setInterval(&quot;fun()&quot;,1000);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="7-关闭广告"><a href="#7-关闭广告" class="headerlink" title="7. 关闭广告"></a>7. 关闭广告</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	*&#123;</span><br><span class="line">		margin: 0;</span><br><span class="line">		padding: 0;</span><br><span class="line">	&#125;</span><br><span class="line">	div&#123;</span><br><span class="line">		width: 100px;</span><br><span class="line">		height: 100px;</span><br><span class="line">		border:1px solid blue;</span><br><span class="line">		position: fixed;</span><br><span class="line">		bottom: 100px;</span><br><span class="line">		right: 0;</span><br><span class="line">	&#125;</span><br><span class="line">	img&#123;</span><br><span class="line">		width: 100%;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;div&gt;</span><br><span class="line">&lt;img src=&quot;img/jf_03.png&quot;&gt;</span><br><span class="line">&lt;span&gt;关闭&lt;/span&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">	var myspan=document.getElementsByTagName(&quot;span&quot;)[0];</span><br><span class="line">	var div=document.getElementsByTagName(&quot;div&quot;)[0];</span><br><span class="line">	myspan.onclick=function()&#123;</span><br><span class="line">		div.style.display=&quot;none&quot;;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="8-选项框的全选与反选"><a href="#8-选项框的全选与反选" class="headerlink" title="8. 选项框的全选与反选"></a>8. 选项框的全选与反选</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">	&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">		div&#123;</span><br><span class="line">			width: 200px;</span><br><span class="line">			height: 500px;</span><br><span class="line">			background-color: pink;</span><br><span class="line">		&#125;</span><br><span class="line">	&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;input type=&quot;checkbox&quot; name=&quot;&quot; id=&quot;box1&quot;&gt;全选</span><br><span class="line">&lt;input type=&quot;checkbox&quot; name=&quot;&quot; id=&quot;box2&quot;&gt;反选</span><br><span class="line">&lt;div id=&quot;mydiv&quot;&gt;</span><br><span class="line">	&lt;p&gt;&lt;input type=&quot;checkbox&quot; name=&quot;&quot;&gt;物品1&lt;/p&gt;</span><br><span class="line">	&lt;p&gt;&lt;input type=&quot;checkbox&quot; name=&quot;&quot;&gt;物品2&lt;/p&gt;</span><br><span class="line">	&lt;p&gt;&lt;input type=&quot;checkbox&quot; name=&quot;&quot;&gt;物品3&lt;/p&gt;</span><br><span class="line">	&lt;p&gt;&lt;input type=&quot;checkbox&quot; name=&quot;&quot;&gt;物品4&lt;/p&gt;</span><br><span class="line">	&lt;p&gt;&lt;input type=&quot;checkbox&quot; name=&quot;&quot;&gt;物品5&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">	var quan=document.getElementById(&quot;box1&quot;);</span><br><span class="line">	var fanxuan=document.getElementById(&quot;box2&quot;);</span><br><span class="line">	var mydiv=document.getElementById(&apos;mydiv&apos;);</span><br><span class="line">	var myinput=mydiv.getElementsByTagName(&quot;input&quot;);</span><br><span class="line">//全选</span><br><span class="line">	quan.onclick=function()&#123;</span><br><span class="line">		if(quan.checked==true)&#123;</span><br><span class="line">		for (var i = 0; i &lt;myinput.length; i++) &#123;</span><br><span class="line">			if(myinput[i].checked==false)&#123;</span><br><span class="line">				myinput[i].checked=true;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">		else</span><br><span class="line">		&#123;</span><br><span class="line">for (var i = 0; i &lt;myinput.length; i++) &#123;</span><br><span class="line">			if(myinput[i].checked==true)&#123;</span><br><span class="line">				myinput[i].checked=false;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">//反选</span><br><span class="line">fanxuan.onclick=function()&#123;</span><br><span class="line">		for (var i = 0; i &lt;myinput.length; i++) &#123;</span><br><span class="line">			if(myinput[i].checked==true)&#123;</span><br><span class="line">				myinput[i].checked=false;</span><br><span class="line">		&#125;else&#123;</span><br><span class="line">			myinput[i].checked=true;</span><br><span class="line">		&#125;</span><br><span class="line"> 	&#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="\assets\img\alipay.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="\assets\img\wechat.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -203,381 +270,109 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://www.xuanbosblog.com/2018/09/19/JavaScript学习第三篇（document对象的使用）/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/09/17/JavaScript学习第二篇/" class="archive-article-date">
-  	<time datetime="2018-09-17T11:48:21.786Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-17</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/09/17/JavaScript学习第二篇/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JavaScript学习第二篇</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/17/JavaScript学习第二篇/">JavaScript学习第二篇</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#在浏览器中，与用户进行数据交换都是通过客户端的javascript代码来实现的，而完成这些交互工作大多数是document对象及其部件进行的，因此document对象是一个比较重要的对象。"><span class="toc-number">1.</span> <span class="toc-text">在浏览器中，与用户进行数据交换都是通过客户端的javascript代码来实现的，而完成这些交互工作大多数是document对象及其部件进行的，因此document对象是一个比较重要的对象。</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#document对象主要属性："><span class="toc-number">2.</span> <span class="toc-text">document对象主要属性：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#常用对象方法"><span class="toc-number">3.</span> <span class="toc-text">常用对象方法:</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用例子"><span class="toc-number"></span> <span class="toc-text">使用例子</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-输入图片序号将其隐藏"><span class="toc-number">1.</span> <span class="toc-text">1. 输入图片序号将其隐藏</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-修改样式"><span class="toc-number">2.</span> <span class="toc-text">2. 修改样式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-简易树形菜单"><span class="toc-number">3.</span> <span class="toc-text">3.简易树形菜单</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-tab切换显示内容"><span class="toc-number">4.</span> <span class="toc-text">4. tab切换显示内容</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-新增事件"><span class="toc-number">5.</span> <span class="toc-text">5. 新增事件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-轮播图"><span class="toc-number">6.</span> <span class="toc-text">6. 轮播图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-关闭广告"><span class="toc-number">7.</span> <span class="toc-text">7. 关闭广告</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8-选项框的全选与反选"><span class="toc-number">8.</span> <span class="toc-text">8. 选项框的全选与反选</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/09/16/JavaScript学习第一篇/" class="archive-article-date">
-  	<time datetime="2018-09-16T13:05:40.794Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-16</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/16/JavaScript学习第一篇/">JavaScript学习第一篇</a>
-    </h1>
-  
+        
+    </div>
+</aside>
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/09/16/Hexo博客yilia主题下添加背景音乐/" class="archive-article-date">
-  	<time datetime="2018-09-16T04:40:17.626Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-16</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/16/Hexo博客yilia主题下添加背景音乐/">Hexo博客yilia主题下添加背景音乐</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">背景音乐</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/05/26/CSS样式表之权重优先级问题/" class="archive-article-date">
-  	<time datetime="2018-05-26T08:21:47.942Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-26</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/05/26/CSS样式表之权重优先级问题/">CSS样式表之权重优先级问题</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/05/11/Adobe DreamweaverCS6破解版安装/" class="archive-article-date">
-  	<time datetime="2018-05-11T09:10:46.429Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/05/11/Adobe DreamweaverCS6破解版安装/">Adobe DreamweaverCS6破解版安装</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">DreamwareCS6</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/04/23/C语言编写水仙花数及杨辉三角/" class="archive-article-date">
-  	<time datetime="2018-04-23T08:30:40.555Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/04/23/C语言编写水仙花数及杨辉三角/">C语言实现水仙花及杨辉三角</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C语言</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">杨辉三角</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">水仙花</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/03/29/送你一碗励志的毒鸡汤？/" class="archive-article-date">
-  	<time datetime="2018-03-29T09:52:45.987Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/29/送你一碗励志的毒鸡汤？/">送你一碗热乎乎的励志毒鸡汤？</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">music</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/03/29/怎么才能活的简单快乐？/" class="archive-article-date">
-  	<time datetime="2018-03-29T09:52:45.987Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/29/怎么才能活的简单快乐？/">怎么才能活的简单快乐？</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">生活</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/03/29/如何理解李志《这个世界会好吗》/" class="archive-article-date">
-  	<time datetime="2018-03-29T09:52:45.983Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/29/如何理解李志《这个世界会好吗》/">如何理解李志《这个世界会好吗》</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">music</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/2018/page/2/">2</a><a class="page-number" href="/archives/2018/page/3/">3</a><a class="extend next" rel="next" href="/archives/2018/page/2/">Next &raquo;</a>
-    </nav>
-  
 
 
           </div>
@@ -608,8 +403,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
