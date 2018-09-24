@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.xuanbosblog.com/"/>
-  <updated>2018-09-19T08:32:59.009Z</updated>
+  <updated>2018-09-24T04:34:44.291Z</updated>
   <id>http://www.xuanbosblog.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaScript学习第四篇（js函数）</title>
+    <link href="http://www.xuanbosblog.com/2018/09/24/JavaScript%E5%AD%A6%E4%B9%A0%E7%AC%AC%E5%9B%9B%E7%AF%87%EF%BC%88js%E5%87%BD%E6%95%B0%EF%BC%89/"/>
+    <id>http://www.xuanbosblog.com/2018/09/24/JavaScript学习第四篇（js函数）/</id>
+    <published>2018-09-24T04:32:36.912Z</published>
+    <updated>2018-09-24T04:34:44.291Z</updated>
+    
+    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p><img src="https://i.loli.net/2018/09/24/5ba8695d06f4a.jpg" alt="timg.jpg"><br><a id="more"></a></p><h5 id="函数就是包裹在花括号中的代码块，前面使用了关键词-function："><a href="#函数就是包裹在花括号中的代码块，前面使用了关键词-function：" class="headerlink" title="函数就是包裹在花括号中的代码块，前面使用了关键词 function："></a>函数就是包裹在花括号中的代码块，前面使用了关键词 function：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function functionname()</span><br><span class="line">&#123;</span><br><span class="line">执行代码</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h5 id="调用带参数的函数"><a href="#调用带参数的函数" class="headerlink" title="调用带参数的函数"></a>调用带参数的函数</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;button onclick=&quot;fun1(&apos;mike&apos;,&apos;basketball,music&apos;)&quot;&gt;点击这里&lt;/button&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">function fun1(name,hobbies)&#123;</span><br><span class="line">alert(&quot;我是&quot;+name+&quot;，我的爱好是&quot;+hobbies+&quot;。&quot;);</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">//变量和参数必须以一致的顺序出现。第一个变量就是第一个被传递的参数的给定的值。</span><br><span class="line">//注意参数由单引号引上</span><br></pre></td></tr></table></figure><p><img src="https://i.loli.net/2018/09/24/5ba868c539d86.png" alt="捕获.PNG"></p><h5 id="带有返回值的函数"><a href="#带有返回值的函数" class="headerlink" title="带有返回值的函数"></a>带有返回值的函数</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;计算两个数的和，返回结果：&lt;/p&gt;</span><br><span class="line">&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">function sum(x,y)&#123;</span><br><span class="line">return x+y;</span><br><span class="line">&#125;</span><br><span class="line">document.getElementById(&quot;demo&quot;).innerHTML=sum(10,8);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure><h5 id="if语句比较两个值"><a href="#if语句比较两个值" class="headerlink" title="if语句比较两个值"></a>if语句比较两个值</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;使用if语句比较两个值&lt;/p&gt;</span><br><span class="line">&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">function fun(a,b)&#123;</span><br><span class="line">if(a&gt;b)&#123;</span><br><span class="line">document.write(&quot;a大于+b&quot;);</span><br><span class="line">&#125;</span><br><span class="line">else if(a==b)&#123;</span><br><span class="line">document.write(&quot;a等于b&quot;);</span><br><span class="line">&#125;</span><br><span class="line">else&#123;</span><br><span class="line">document.write(&quot;a小于b&quot;);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">document.getElementById(&quot;p&quot;).innerHTML=fun(10,10);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/09/24/5ba8695d06f4a.jpg&quot; alt=&quot;timg.jpg&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://www.xuanbosblog.com/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>JavaScript学习第三篇（document对象的使用）</title>
@@ -182,9 +202,9 @@
     </summary>
     
     
-      <category term="随笔" scheme="http://www.xuanbosblog.com/tags/%E9%9A%8F%E7%AC%94/"/>
-    
       <category term="music" scheme="http://www.xuanbosblog.com/tags/music/"/>
+    
+      <category term="随笔" scheme="http://www.xuanbosblog.com/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
@@ -297,9 +317,9 @@
     </summary>
     
     
-      <category term="随笔" scheme="http://www.xuanbosblog.com/tags/%E9%9A%8F%E7%AC%94/"/>
-    
       <category term="秋游" scheme="http://www.xuanbosblog.com/tags/%E7%A7%8B%E6%B8%B8/"/>
+    
+      <category term="随笔" scheme="http://www.xuanbosblog.com/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
@@ -365,6 +385,28 @@
   </entry>
   
   <entry>
+    <title>RedHat Linux下本地yum源配置</title>
+    <link href="http://www.xuanbosblog.com/2018/03/29/RedHat%20Linux%E4%B8%8B%E6%9C%AC%E5%9C%B0yum%E6%BA%90%E9%85%8D%E7%BD%AE/"/>
+    <id>http://www.xuanbosblog.com/2018/03/29/RedHat Linux下本地yum源配置/</id>
+    <published>2018-03-29T09:52:45.951Z</published>
+    <updated>2017-12-03T08:06:57.689Z</updated>
+    
+    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p><img src="https://i.loli.net/2017/12/03/5a23acb4e4d41.jpg" alt="timg (2).jpg"><br><a id="more"></a></p><ol><li>确保Linx虚拟机连接镜像（右击连接）<br><img src="https://i.loli.net/2017/12/03/5a23a6bc63b66.png" alt=")L%NQ$J5D@GVXQ9{N11P@01.png"><br>2.查看挂载点<br>在终端输入mount命令<br><img src="https://i.loli.net/2017/12/03/5a23a72be6b87.png" alt="O(}_R(2RA7_SDKX`~KX4}S3.png"><br>在下面找到镜像的位置 /dev/sr0<br><img src="https://i.loli.net/2017/12/03/5a23b05e55bba.png" alt="a.png"><br>3.创建个挂载目录<br>  mkdir /media/cdrom<br><img src="https://i.loli.net/2017/12/03/5a23a87a680ce.png" alt="$J5DF_MJ8{}QO2HP~SU8C71.png"><br>  将dev/sr0挂载到创建的挂载目录<br>  命令mount/dev/sr0/meida/cdrom<br><img src="https://i.loli.net/2017/12/03/5a23b05e57b47.png" alt="q.png"><br>4.进入 etc/yum.respos.d<br>创建一个新文件 名为:rhe17.repo <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[rhe17]</span><br><span class="line">name=rhe17</span><br><span class="line">baseurl=file:///media/cdrom</span><br><span class="line">enable=1</span><br><span class="line">gpgcheck=0</span><br></pre></td></tr></table></figure></li></ol><p><img src="https://i.loli.net/2017/12/03/5a23aa02ddc25.png" alt="{L5_32KR5AHHSKGY$EN)1ZC.png"></p><p>测试yum是否成功配置<br>我们可以用yum装个bind试试<br><img src="https://i.loli.net/2017/12/03/5a23ae48802f0.png" alt="5a23ab5c491c0.png"><br>此时我们的yum配置成功!</p><h2 id="bye"><a href="#bye" class="headerlink" title="bye~"></a>bye~</h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;https://i.loli.net/2017/12/03/5a23acb4e4d41.jpg&quot; alt=&quot;timg (2).jpg&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="http://www.xuanbosblog.com/tags/Linux/"/>
+    
+      <category term="Yum" scheme="http://www.xuanbosblog.com/tags/Yum/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Redhat 7下samba的基本配置</title>
     <link href="http://www.xuanbosblog.com/2018/03/29/Redhat%207%E4%B8%8Bsamba%E7%9A%84%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/"/>
     <id>http://www.xuanbosblog.com/2018/03/29/Redhat 7下samba的基本配置/</id>
@@ -384,28 +426,6 @@
       <category term="Linux" scheme="http://www.xuanbosblog.com/tags/Linux/"/>
     
       <category term="samba" scheme="http://www.xuanbosblog.com/tags/samba/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>RedHat Linux下本地yum源配置</title>
-    <link href="http://www.xuanbosblog.com/2018/03/29/RedHat%20Linux%E4%B8%8B%E6%9C%AC%E5%9C%B0yum%E6%BA%90%E9%85%8D%E7%BD%AE/"/>
-    <id>http://www.xuanbosblog.com/2018/03/29/RedHat Linux下本地yum源配置/</id>
-    <published>2018-03-29T09:52:45.951Z</published>
-    <updated>2017-12-03T08:06:57.689Z</updated>
-    
-    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><p><img src="https://i.loli.net/2017/12/03/5a23acb4e4d41.jpg" alt="timg (2).jpg"><br><a id="more"></a></p><ol><li>确保Linx虚拟机连接镜像（右击连接）<br><img src="https://i.loli.net/2017/12/03/5a23a6bc63b66.png" alt=")L%NQ$J5D@GVXQ9{N11P@01.png"><br>2.查看挂载点<br>在终端输入mount命令<br><img src="https://i.loli.net/2017/12/03/5a23a72be6b87.png" alt="O(}_R(2RA7_SDKX`~KX4}S3.png"><br>在下面找到镜像的位置 /dev/sr0<br><img src="https://i.loli.net/2017/12/03/5a23b05e55bba.png" alt="a.png"><br>3.创建个挂载目录<br>  mkdir /media/cdrom<br><img src="https://i.loli.net/2017/12/03/5a23a87a680ce.png" alt="$J5DF_MJ8{}QO2HP~SU8C71.png"><br>  将dev/sr0挂载到创建的挂载目录<br>  命令mount/dev/sr0/meida/cdrom<br><img src="https://i.loli.net/2017/12/03/5a23b05e57b47.png" alt="q.png"><br>4.进入 etc/yum.respos.d<br>创建一个新文件 名为:rhe17.repo <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[rhe17]</span><br><span class="line">name=rhe17</span><br><span class="line">baseurl=file:///media/cdrom</span><br><span class="line">enable=1</span><br><span class="line">gpgcheck=0</span><br></pre></td></tr></table></figure></li></ol><p><img src="https://i.loli.net/2017/12/03/5a23aa02ddc25.png" alt="{L5_32KR5AHHSKGY$EN)1ZC.png"></p><p>测试yum是否成功配置<br>我们可以用yum装个bind试试<br><img src="https://i.loli.net/2017/12/03/5a23ae48802f0.png" alt="5a23ab5c491c0.png"><br>此时我们的yum配置成功!</p><h2 id="bye"><a href="#bye" class="headerlink" title="bye~"></a>bye~</h2>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;https://i.loli.net/2017/12/03/5a23acb4e4d41.jpg&quot; alt=&quot;timg (2).jpg&quot;&gt;&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="Linux" scheme="http://www.xuanbosblog.com/tags/Linux/"/>
-    
-      <category term="Yum" scheme="http://www.xuanbosblog.com/tags/Yum/"/>
     
   </entry>
   
@@ -434,28 +454,6 @@
     
     
       <category term="java环境" scheme="http://www.xuanbosblog.com/tags/java%E7%8E%AF%E5%A2%83/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hello,world!功夫不负有心人.</title>
-    <link href="http://www.xuanbosblog.com/2018/03/29/hello,world!%E5%8A%9F%E5%A4%AB%E4%B8%8D%E8%B4%9F%E6%9C%89%E5%BF%83%E4%BA%BA/"/>
-    <id>http://www.xuanbosblog.com/2018/03/29/hello,world!功夫不负有心人/</id>
-    <published>2018-03-29T09:52:45.943Z</published>
-    <updated>2017-11-24T10:23:01.630Z</updated>
-    
-    <content type="html"><![CDATA[<script src="\assets\js\APlayer.min.js"> </script><h2 id="从暑假了解github到搭建好属于自己的博客"><a href="#从暑假了解github到搭建好属于自己的博客" class="headerlink" title="从暑假了解github到搭建好属于自己的博客"></a>从暑假了解github到搭建好属于自己的博客</h2><a id="more"></a><p>自从暑假知道世界上有github这个好东西就一直在学习，期间有很多次搭建出现问题想要放弃，（毕竟小白）但想想能拥有自己的博客又不断地尝试。终于在今天成功了！<br><img src="/smile/drink.png" alt="image"></p><h2 id="博客的功能我将慢慢学习然后实现它！"><a href="#博客的功能我将慢慢学习然后实现它！" class="headerlink" title="博客的功能我将慢慢学习然后实现它！"></a>博客的功能我将慢慢学习然后实现它！</h2><p>##如果你也想搭建自己的博客 前期遇到问题可以找我。<br><img src="\assets\img\weixin.png" alt="image"><br>date: 2017-11-17 19:45:42</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;从暑假了解github到搭建好属于自己的博客&quot;&gt;&lt;a href=&quot;#从暑假了解github到搭建好属于自己的博客&quot; class=&quot;headerlink&quot; title=&quot;从暑假了解github到搭建好属于自己的博客&quot;&gt;&lt;/a&gt;从暑假了解github到搭建好属于自己的博客&lt;/h2&gt;
-    
-    </summary>
-    
-    
-      <category term="hello" scheme="http://www.xuanbosblog.com/tags/hello/"/>
-    
-      <category term="world" scheme="http://www.xuanbosblog.com/tags/world/"/>
     
   </entry>
   
