@@ -6,14 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.xuanbosblog.com">
-  <title>Archives | Xxxuan的博客</title>
+  <title>Linux基础操作 | Xxxuan的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Xxxuan的博客">
-<meta property="og:url" content="http://www.xuanbosblog.com/archives/index.html">
+  <meta name="description" content="1. 目录操作创建目录使用 mkdir 命令创建目录mkdir $HOME/testFolder切换目录使用 cd 命令切换目录cd $HOME/testFolder使用 cd ../ 命令切换到上一级目录cd ../移动目录使用 mv 命令移动目录">
+<meta name="keywords" content="Linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux基础操作">
+<meta property="og:url" content="http://www.xuanbosblog.com/2018/11/09/Linux基础操作/index.html">
 <meta property="og:site_name" content="Xxxuan的博客">
+<meta property="og:description" content="1. 目录操作创建目录使用 mkdir 命令创建目录mkdir $HOME/testFolder切换目录使用 cd 命令切换目录cd $HOME/testFolder使用 cd ../ 命令切换到上一级目录cd ../移动目录使用 mv 命令移动目录">
+<meta property="og:updated_time" content="2018-11-09T13:36:49.898Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Xxxuan的博客">
+<meta name="twitter:title" content="Linux基础操作">
+<meta name="twitter:description" content="1. 目录操作创建目录使用 mkdir 命令创建目录mkdir $HOME/testFolder切换目录使用 cd 命令切换目录cd $HOME/testFolder使用 cd ../ 命令切换到上一级目录cd ../移动目录使用 mv 命令移动目录">
   
     <link rel="alternative" href="/atom.xml" title="Xxxuan的博客" type="application/atom+xml">
   
@@ -162,36 +167,72 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Linux基础操作" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/11/09/Linux基础操作/" class="archive-article-date">
-  	<time datetime="2018-11-09T13:27:46.342Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-09</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/11/09/Linux基础操作/">Linux基础操作</a>
+    <h1 class="article-title" itemprop="name">
+      Linux基础操作
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2018/11/09/Linux基础操作/" class="archive-article-date">
+  	<time datetime="2018-11-09T13:27:46.342Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-09</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <script src="\assets\js\APlayer.min.js"> </script><h3 id="1-目录操作"><a href="#1-目录操作" class="headerlink" title="1. 目录操作"></a>1. 目录操作</h3><p>创建目录<br>使用 mkdir 命令创建目录<br><code>mkdir $HOME/testFolder</code><br>切换目录<br>使用 cd 命令切换目录<br><code>cd $HOME/testFolder</code><br>使用 cd ../ 命令切换到上一级目录<br><code>cd ../</code><br>移动目录<br>使用 mv 命令移动目录<br><a id="more"></a><br><code>mv $HOME/testFolder /var/tmp</code><br>删除目录<br>使用 rm -rf 命令删除目录<br><code>rm -rf /var/tmp/testFolder</code><br>查看目录下的文件<br>使用 ls 命令查看 /etc<br> 目录下所有文件和文件夹<br><code>ls /etc</code></p>
+<hr>
+<h3 id="2-文件操作"><a href="#2-文件操作" class="headerlink" title="2.文件操作"></a>2.文件操作</h3><p>创建文件<br>使用 touch 命令创建文件<br><code>touch ~/testFile</code><br>执行 ls 命令, 可以看到刚才新建的 testFile 文件<br><code>ls ~</code><br>复制文件<br>使用 cp 命令复制文件<br><code>cp ~/testFile ~/testNewFile</code><br>删除文件<br>使用 rm 命令删除文件, 输入 y 后回车确认删除<br><code>rm ~/testFile</code><br>查看文件内容<br>使用 cat 命令查看 .bash_history 文件内容<br><code>cat ~/.bash_history</code></p>
+<hr>
+<h3 id="3-过滤-管道与重定向"><a href="#3-过滤-管道与重定向" class="headerlink" title="3.过滤, 管道与重定向"></a>3.过滤, 管道与重定向</h3><p>过滤<br>过滤出 /etc/passwd 文件中包含 root 的记录<br><code>grep &#39;root&#39; /etc/passwd</code><br>递归地过滤出 /var/log/ 目录中包含 linux 的记录<br><code>grep -r &#39;linux&#39; /var/log/</code><br>管道<br>简单来说, Linux 中管道的作用是将上一个命令的输出作为下一个命令的输入, 像 pipe 一样将各个命令串联起来执行, 管道的操作符是 |<br>比如, 我们可以将 cat 和 grep 两个命令用管道组合在一起<br><code>cat /etc/passwd | grep &#39;root&#39;</code><br>过滤出 /etc 目录中名字包含 ssh 的目录(不包括子目录)<br><code>ls /etc | grep &#39;ssh&#39;</code><br>重定向<br>可以使用 &gt; 或 &lt; 将命令的输出重定向到一个文件中<br><code>echo &#39;Hello World&#39; &gt; ~/test.txt</code></p>
+<hr>
+<h3 id="4-运维常用命令"><a href="#4-运维常用命令" class="headerlink" title="4.运维常用命令"></a>4.运维常用命令</h3><p>ping 命令<br>对 cloud.tencent.com 发送 4 个 ping 包, 检查与其是否联通<br><code>ping -c 4 cloud.tencent.com</code><br>netstat 命令<br>netstat 命令用于显示各种网络相关信息，如网络连接, 路由表, 接口状态等等<br>列出所有处于监听状态的tcp端口<br><code>netstat -lt</code><br>查看所有的端口信息, 包括 PID 和进程名称<br><code>netstat -tulpn</code><br>ps 命令<br>过滤得到当前系统中的 ssh 进程信息<br><code>ps aux | grep &#39;ssh&#39;</code></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="\assets\img\alipay.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="\assets\img\wechat.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -203,364 +244,118 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://www.xuanbosblog.com/2018/11/09/Linux基础操作/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/10/21/Photoshop快捷键整理/" class="archive-article-date">
-  	<time datetime="2018-10-21T12:16:26.930Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-21</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/10/21/Photoshop快捷键整理/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Photoshop快捷键整理</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/10/21/Photoshop快捷键整理/">Photoshop快捷键整理</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Photoshop</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-目录操作"><span class="toc-number">1.</span> <span class="toc-text">1. 目录操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-文件操作"><span class="toc-number">2.</span> <span class="toc-text">2.文件操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-过滤-管道与重定向"><span class="toc-number">3.</span> <span class="toc-text">3.过滤, 管道与重定向</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-运维常用命令"><span class="toc-number">4.</span> <span class="toc-text">4.运维常用命令</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/09/24/JavaScript学习第五篇（js字符串String对象实例）/" class="archive-article-date">
-  	<time datetime="2018-09-24T14:31:38.544Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-24</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/24/JavaScript学习第五篇（js字符串String对象实例）/">JavaScript学习第五篇（js字符串String对象实例）</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/09/24/JavaScript学习第四篇（js函数）/" class="archive-article-date">
-  	<time datetime="2018-09-24T04:32:36.912Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-24</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/24/JavaScript学习第四篇（js函数）/">JavaScript学习第四篇（js函数）</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/09/19/JavaScript学习第三篇（document对象的使用）/" class="archive-article-date">
-  	<time datetime="2018-09-19T08:24:21.965Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/19/JavaScript学习第三篇（document对象的使用）/">JavaScript学习第三篇（document对象的使用）</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/09/17/JavaScript学习第二篇/" class="archive-article-date">
-  	<time datetime="2018-09-17T11:48:21.786Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/17/JavaScript学习第二篇/">JavaScript学习第二篇</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/09/16/JavaScript学习第一篇/" class="archive-article-date">
-  	<time datetime="2018-09-16T13:05:40.794Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-16</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/16/JavaScript学习第一篇/">JavaScript学习第一篇</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/09/16/Hexo博客yilia主题下添加背景音乐/" class="archive-article-date">
-  	<time datetime="2018-09-16T04:40:17.626Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-16</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/16/Hexo博客yilia主题下添加背景音乐/">Hexo博客yilia主题下添加背景音乐</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">背景音乐</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/05/26/CSS样式表之权重优先级问题/" class="archive-article-date">
-  	<time datetime="2018-05-26T08:21:47.942Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-26</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/05/26/CSS样式表之权重优先级问题/">CSS样式表之权重优先级问题</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/05/11/Adobe DreamweaverCS6破解版安装/" class="archive-article-date">
-  	<time datetime="2018-05-11T09:10:46.429Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-11</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/05/11/Adobe DreamweaverCS6破解版安装/">Adobe DreamweaverCS6破解版安装</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">DreamwareCS6</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="page-number" href="/archives/page/3/">3</a><a class="extend next" rel="next" href="/archives/page/2/">Next &raquo;</a>
-    </nav>
   
 
 
@@ -592,8 +387,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
