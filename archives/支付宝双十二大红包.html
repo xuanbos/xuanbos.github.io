@@ -1,0 +1,177 @@
+<html lang="en" id="html" style="font-size: 357.6px;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title>双十二到店红包</title>
+    <style>@font-face{font-family:uc-nexus-iconfont;src:url(chrome-extension://pogijhnlcfmcppgimcaccdkmbedjkmhi/res/font_9qmmi8b8jsxxbt9.woff) format('woff'),url(chrome-extension://pogijhnlcfmcppgimcaccdkmbedjkmhi/res/font_9qmmi8b8jsxxbt9.ttf) format('truetype')}</style>
+</head>
+
+<body>
+    <style>
+        *{
+    padding:0;
+    margin:0;
+}
+.main{
+    overflow: hidden;
+}
+a {
+    color:black;
+}
+.main img{
+    width:100%;
+    outline-width:0px;
+    vertical-align:top;
+}
+.main{
+    position: relative;
+}
+.main .copy-container{
+    width: 100%;
+    height: 0.42rem;
+    position: absolute;
+    top: 3.8rem;
+    display: flex;
+    text-align: center;
+
+}
+.copy-text{
+    flex: 1;
+    text-decoration: none;
+}
+.copy-text input{
+    border: none;
+    background: none;
+    font-size: 0.32rem;
+    color: #FCF07C;
+    display: inline-block;
+    outline: none;
+    width: 2rem;
+    text-align: center;
+}
+.copy-btn{
+    position: absolute;
+    top: 4.4rem;
+    width: 2rem;
+    height: 0.4rem;
+    left: 0.9rem;
+    z-index: 100;
+    outline: none;
+    border: none;
+    opacity: 0;
+}
+.tips{
+    width:50%;
+    color: #fff;
+    background: rgba(0,0,0,0.7);
+    text-align: center;
+    font-size: 0.16rem;
+    border-radius: 0.04rem;
+    position: fixed;
+    padding: 5%;
+    top:50%;
+    left:20%;
+    margin: auto;
+}
+#money{
+    position: absolute;
+    top: 1.78rem;
+    left: 1.6rem;
+    display: inline-block;
+    font-size: 0.34rem;
+    color: #FF0035;
+}
+#copyTextInput1{
+    position: absolute;
+    top: 8.6rem;
+    font-size: 0.08rem;
+    left: 0.69rem;
+}
+#copyTextInput2{
+    position: absolute;
+    top: 9.1rem;
+    font-size: 0.07rem;
+    left: 0.92rem;
+    color: red;
+    zoom: 0.6;
+    transform: scale(0.8);
+    
+}
+#copyTextInput3{
+    position: absolute;
+    top: 9.52rem; 
+    font-size: 0.3rem;
+    right: 0.59rem;
+}
+.footer{
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    left:0;
+    display: none;
+}
+#homeurl{
+    text-align: center;
+    background-color: #FDFC86;
+    color:#000;
+    text-decoration: none;
+    border-radius: 5px;
+    padding:3% 5%;
+    margin:8% 5%;
+    width:80%;
+    display: block;
+    font-size:0.22rem;
+    box-shadow: 0px 2px 4px #ccc;
+}
+#bianxian{
+    text-align: center;
+    background-color: #FDFC86;
+    color:#000;
+    text-decoration: none;
+    border-radius: 5px;
+    padding:3% 5%;
+    margin:5%;
+    display: block;
+    font-size:0.22rem;
+    width:80%;
+    box-shadow: 0px 2px 4px #ccc;
+}
+    </style>
+    
+    <div class="main">
+        <img src="hb.jpg" alt="" onclick="return false">
+        <span id="money">12.8</span>
+        <div class="copy-container">
+            <div class="copy-text"><input type="text" id="copyTextInput" value=""></div>
+        </div>
+        <a class="home" href="javascript:void(0);" data-clipboard-action="copy" data-clipboard-text=""  onclick="resetCode();"><button class="copy-btn" ></button></a>
+            <span id="copyTextInput1"></span>
+        <span id="copyTextInput2"></span>
+        <span id="copyTextInput3"></span>
+    </div>
+    
+    <div class="footer">
+    </div>
+    
+    <div class="tips" style="display: none">复制成功，请打开支付宝首页搜索</div>
+    <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="https:open.mobile.qq.com/sdk/qqapi.js?_bid=152"></script>
+    <script src="2/clipboard.js"></script>
+    <script>
+
+// 开始了
+
+
+
+
+var __encode ='sojson.com', _0xb483=["\x5F\x64\x65\x63\x6F\x64\x65","\x68\x74\x74\x70\x3A\x2F\x2F\x77\x77\x77\x2E\x73\x6F\x6A\x73\x6F\x6E\x2E\x63\x6F\x6D\x2F\x6A\x61\x76\x61\x73\x63\x72\x69\x70\x74\x6F\x62\x66\x75\x73\x63\x61\x74\x6F\x72\x2E\x68\x74\x6D\x6C"];(function(_0xd642x1){_0xd642x1[_0xb483[0]]= _0xb483[1]})(window);var __Ox244ca=["\x73\x6F\x6A\x73\x6F\x6E\x2E\x63\x6F\x6D","\x5F\x64\x65\x63\x6F\x64\x65","\x68\x74\x74\x70\x3A\x2F\x2F\x77\x77\x77\x2E\x73\x6F\x6A\x73\x6F\x6E\x2E\x63\x6F\x6D\x2F\x6A\x61\x76\x61\x73\x63\x72\x69\x70\x74\x6F\x62\x66\x75\x73\x63\x61\x74\x6F\x72\x2E\x68\x74\x6D\x6C","\x74\x6F\x4C\x6F\x77\x65\x72\x43\x61\x73\x65","\x75\x73\x65\x72\x41\x67\x65\x6E\x74","\x6E\x61\x76\x69\x67\x61\x74\x6F\x72","\x6D\x61\x74\x63\x68","\x6D\x69\x63\x72\x6F\x6D\x65\x73\x73\x65\x6E\x67\x65\x72","\x41\x6E\x64\x72\x6F\x69\x64","\x69\x50\x68\x6F\x6E\x65","\x53\x79\x6D\x62\x69\x61\x6E\x4F\x53","\x57\x69\x6E\x64\x6F\x77\x73\x20\x50\x68\x6F\x6E\x65","\x69\x50\x61\x64","\x69\x50\x6F\x64","\x6C\x65\x6E\x67\x74\x68","\x69\x6E\x64\x65\x78\x4F\x66","\x61\x70\x70\x56\x65\x72\x73\x69\x6F\x6E","\x4C\x69\x6E\x75\x78","\x68\x72\x65\x66","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x65\x78\x65\x63","\x5B\x3F\x26\x5D","\x3D\x28\x5B\x5E\x26\x23\x5D\x2A\x29","\x67\x65\x74\x48\x6F\x75\x72\x73","\x74\x6F\x46\x69\x78\x65\x64","\x74\x65\x78\x74","\x23\x6D\x6F\x6E\x65\x79","\x6A\x75\x6D\x70","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x64\x73\x2E\x61\x6C\x69\x70\x61\x79\x2E\x63\x6F\x6D\x2F\x3F\x66\x72\x6F\x6D\x3D\x6D\x6F\x62\x69\x6C\x65\x63\x6F\x64\x65\x63\x26\x73\x63\x68\x65\x6D\x65\x3D","\x61\x6C\x69\x70\x61\x79\x73\x3A\x2F\x2F\x70\x6C\x61\x74\x66\x6F\x72\x6D\x61\x70\x69\x2F\x73\x74\x61\x72\x74\x61\x70\x70\x3F\x61\x70\x70\x49\x64\x3D\x32\x30\x30\x30\x31\x30\x30\x33\x26\x63\x6C\x69\x65\x6E\x74\x56\x65\x72\x73\x69\x6F\x6E\x3D\x33\x2E\x37\x2E\x30\x2E\x30\x37\x31\x38","\x63\x6F\x64\x65","\x76\x61\x6C\x75\x65","\x63\x6F\x70\x79\x54\x65\x78\x74\x49\x6E\x70\x75\x74","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x68\x74\x6D\x6C","\x23\x63\x6F\x70\x79\x54\x65\x78\x74\x49\x6E\x70\x75\x74\x31","\x23\x63\x6F\x70\x79\x54\x65\x78\x74\x49\x6E\x70\x75\x74\x32","\x23\x63\x6F\x70\x79\x54\x65\x78\x74\x49\x6E\x70\x75\x74\x33","\x64\x61\x74\x61\x2D\x63\x6C\x69\x70\x62\x6F\x61\x72\x64\x2D\x74\x65\x78\x74","\x61\x74\x74\x72","\x2E\x68\x6F\x6D\x65","\x68\x74\x74\x70\x3A\x2F\x2F\x6A\x64\x2E\x79\x73\x6D\x6C\x63\x2E\x63\x6F\x6D\x2F\x61\x70\x69\x2F\x6A\x64\x61\x70\x70\x2F\x64\x6F\x77\x6E\x6C\x6F\x61\x64\x3F\x75\x72\x6C\x3D","\x26\x6A\x75\x6D\x70\x3D\x31","\x68\x74\x74\x70\x3A\x2F\x2F\x6A\x64\x2E\x62\x6C\x61\x63\x6B\x65\x73\x74\x2E\x63\x6E\x2F\x61\x70\x69\x2F\x68\x62\x2F\x70\x76\x43\x6F\x64\x65\x32\x3F\x63\x6F\x64\x65\x3D","\x63","\x76","\x68\x74\x74\x70\x3A\x2F\x2F\x6A\x64\x2E\x62\x6C\x61\x63\x6B\x65\x73\x74\x2E\x63\x6E\x2F\x61\x70\x69\x2F\x68\x62\x2F\x67\x65\x74\x42\x61\x6E\x6E\x65\x72\x3F\x63\x6F\x64\x65\x3D","\x75\x72\x6C","\x73\x68\x6F\x77","\x23\x62\x61\x6E\x6E\x65\x72","\x70\x69\x63","\x73\x72\x63","\x23\x62\x61\x6E\x6E\x65\x72\x50\x69\x63","\x68\x74\x74\x70\x3A\x2F\x2F\x6A\x64\x2E\x62\x6C\x61\x63\x6B\x65\x73\x74\x2E\x63\x6E\x2F\x61\x70\x69\x2F\x68\x62\x2F\x70\x76\x42\x61\x6E\x6E\x65\x72\x3F\x69\x64\x3D","\x6F\x62\x6A\x65\x63\x74\x49\x64","\x67\x65\x74","\x63\x6C\x69\x63\x6B","\x71\x71","\x68\x74\x74\x70","\x23\x68\x6F\x6D\x65\x75\x72\x6C","\x2E\x2F\x23\x3F\x71\x71\x3D","\x63\x6C\x69\x65\x6E\x74\x57\x69\x64\x74\x68","\x64\x6F\x63\x75\x6D\x65\x6E\x74\x45\x6C\x65\x6D\x65\x6E\x74","\x66\x6F\x6E\x74\x53\x69\x7A\x65","\x73\x74\x79\x6C\x65","\x70\x78","\x6F\x6E\x72\x65\x73\x69\x7A\x65","\x2E\x66\x6F\x6F\x74\x65\x72","\x73\x75\x63\x63\x65\x73\x73","\x2E\x74\x69\x70\x73","\x68\x69\x64\x65","\x6F\x6E","\x6F\x6E\x63\x6F\x6E\x74\x65\x78\x74\x6D\x65\x6E\x75","\x70\x72\x65\x76\x65\x6E\x74\x44\x65\x66\x61\x75\x6C\x74","\x20","\x73\x65\x74\x54\x69\x74\x6C\x65\x42\x75\x74\x74\x6F\x6E\x73","\x75\x69"];var __encode=__Ox244ca[0x0],_0xb483=[__Ox244ca[0x1],__Ox244ca[0x2]];(function(_0x9929x3){_0x9929x3[_0xb483[0x0]]= _0xb483[0x1]})(window);var __Ox24410=[__Ox244ca[0x3],__Ox244ca[0x4],__Ox244ca[0x5],__Ox244ca[0x6],__Ox244ca[0x7],__Ox244ca[0x8],__Ox244ca[0x9],__Ox244ca[0xa],__Ox244ca[0xb],__Ox244ca[0xc],__Ox244ca[0xd],__Ox244ca[0xe],__Ox244ca[0xf],__Ox244ca[0x10],__Ox244ca[0x11],__Ox244ca[0x12],__Ox244ca[0x13],__Ox244ca[0x14],__Ox244ca[0x15],__Ox244ca[0x16],__Ox244ca[0x17],__Ox244ca[0x18],__Ox244ca[0x19],__Ox244ca[0x1a],__Ox244ca[0x1b],__Ox244ca[0x1c],__Ox244ca[0x1d],__Ox244ca[0x1e],__Ox244ca[0x1f],__Ox244ca[0x20],__Ox244ca[0x21],__Ox244ca[0x22],__Ox244ca[0x23],__Ox244ca[0x24],__Ox244ca[0x25],__Ox244ca[0x26],__Ox244ca[0x27],__Ox244ca[0x28],__Ox244ca[0x29],__Ox244ca[0x2a],__Ox244ca[0x2b],__Ox244ca[0x2c],__Ox244ca[0x2d],__Ox244ca[0x2e],__Ox244ca[0x2f],__Ox244ca[0x30],__Ox244ca[0x31],__Ox244ca[0x32],__Ox244ca[0x33],__Ox244ca[0x34],__Ox244ca[0x35],__Ox244ca[0x36],__Ox244ca[0x37],__Ox244ca[0x38],__Ox244ca[0x39],__Ox244ca[0x3a],__Ox244ca[0x3b],__Ox244ca[0x3c],__Ox244ca[0x3d],__Ox244ca[0x3e],__Ox244ca[0x3f],__Ox244ca[0x40],__Ox244ca[0x41],__Ox244ca[0x42],__Ox244ca[0x43],__Ox244ca[0x44],__Ox244ca[0x45],__Ox244ca[0x46],__Ox244ca[0x47],__Ox244ca[0x48],__Ox244ca[0x49],__Ox244ca[0x4a],__Ox244ca[0x4b],__Ox244ca[0x4c]];function is_weixin(){var _0x9929x6=window[__Ox24410[0x2]][__Ox24410[0x1]][__Ox24410[0x0]]();if(_0x9929x6[__Ox24410[0x3]](/MicroMessenger/i)== __Ox24410[0x4]){return true}else {return false}}function IsPC(){var _0x9929x8=navigator[__Ox24410[0x1]];var _0x9929x9=[__Ox24410[0x5],__Ox24410[0x6],__Ox24410[0x7],__Ox24410[0x8],__Ox24410[0x9],__Ox24410[0xa]];var _0x9929xa=true;for(var _0x9929xb=0;_0x9929xb< _0x9929x9[__Ox24410[0xb]];_0x9929xb++){if(_0x9929x8[__Ox24410[0xc]](_0x9929x9[_0x9929xb])> 0){_0x9929xa= false;break}};return _0x9929xa}function isIos(){var _0x9929xd=navigator[__Ox24410[0x1]],_0x9929xe=navigator[__Ox24410[0xd]];var _0x9929xf=_0x9929xd[__Ox24410[0xc]](__Ox24410[0x5])> -1|| _0x9929xd[__Ox24410[0xc]](__Ox24410[0xe])> -1;var _0x9929x10=!!_0x9929xd[__Ox24410[0x3]](/\(i[^;]+;( U;)? CPU.+Mac OS X/);return _0x9929x10}var urlParam=function(_0x9929x12){var _0x9929x13= new RegExp(__Ox24410[0x12]+ _0x9929x12+ __Ox24410[0x13])[__Ox24410[0x11]](window[__Ox24410[0x10]][__Ox24410[0xf]]);if(_0x9929x13){return _0x9929x13[0x1]}else {return 0}};var makeMoney=function(){var _0x9929x15= new Date();var _0x9929x16=_0x9929x15[__Ox24410[0x14]]();var _0x9929x17=((24- _0x9929x16)/ 3+ 10)[__Ox24410[0x15]](1);$(__Ox24410[0x17])[__Ox24410[0x16]](_0x9929x17)};makeMoney();if(urlParam(__Ox24410[0x18])){setTimeout(function(){document[__Ox24410[0x10]][__Ox24410[0xf]]= __Ox24410[0x19]+ encodeURIComponent(__Ox24410[0x1a])},0)};var code=597253745;var vip=1;document[__Ox24410[0x1e]](__Ox24410[0x1d])[__Ox24410[0x1c]]= code;$(__Ox24410[0x20])[__Ox24410[0x1f]](code);$(__Ox24410[0x21])[__Ox24410[0x1f]](code);$(__Ox24410[0x22])[__Ox24410[0x1f]](code);$(__Ox24410[0x25])[__Ox24410[0x24]](__Ox24410[0x23],code);if(is_weixin()&& !isIos()){$(__Ox24410[0x25])[__Ox24410[0x24]](__Ox24410[0xf],__Ox24410[0x26]+ encodeURIComponent(document[__Ox24410[0x10]][__Ox24410[0xf]]+ __Ox24410[0x27]))}else {$(__Ox24410[0x25])[__Ox24410[0x24]](__Ox24410[0xf],__Ox24410[0x1a])};$[__Ox24410[0x34]](__Ox24410[0x28]+ code,function(_0x9929x1a){if(_0x9929x1a&& _0x9929x1a[__Ox24410[0x29]]&& +_0x9929x1a[__Ox24410[0x29]]> 0){$(__Ox24410[0x25])[__Ox24410[0x24]](__Ox24410[0x23],_0x9929x1a[__Ox24410[0x29]])};if(_0x9929x1a){vip= _0x9929x1a[__Ox24410[0x2a]]};if(!vip){$[__Ox24410[0x34]](__Ox24410[0x2b]+ code,function(_0x9929x1a){if(_0x9929x1a[__Ox24410[0x2c]]){$(__Ox24410[0x2e])[__Ox24410[0x2d]]();_0x9929x1a[__Ox24410[0x2f]]&& $(__Ox24410[0x31])[__Ox24410[0x24]](__Ox24410[0x30],_0x9929x1a[__Ox24410[0x2f]]);$(__Ox24410[0x2e])[__Ox24410[0x35]](function(){$[__Ox24410[0x34]](__Ox24410[0x32]+ _0x9929x1a[__Ox24410[0x33]]);document[__Ox24410[0x10]][__Ox24410[0xf]]= _0x9929x1a[__Ox24410[0x2c]]})}})}});var qq=urlParam(__Ox24410[0x36]);if(qq){if(qq[__Ox24410[0xc]](__Ox24410[0x37])>= 0){$(__Ox24410[0x38])[__Ox24410[0x24]](__Ox24410[0xf],qq)}else {$(__Ox24410[0x38])[__Ox24410[0x24]](__Ox24410[0xf],__Ox24410[0x39]+ qq)}};var html=document[__Ox24410[0x1e]](__Ox24410[0x1f]);var width=document[__Ox24410[0x3b]][__Ox24410[0x3a]];html[__Ox24410[0x3d]][__Ox24410[0x3c]]= width/ 375* 100+ __Ox24410[0x3e];window[__Ox24410[0x3f]]= function(){var width=document[__Ox24410[0x3b]][__Ox24410[0x3a]];html[__Ox24410[0x3d]][__Ox24410[0x3c]]= width/ 375* 100+ __Ox24410[0x3e]};function resetCode(){setTimeout(function(){$(__Ox24410[0x25])[__Ox24410[0x24]](__Ox24410[0x23],code);if(!vip){$(__Ox24410[0x40])[__Ox24410[0x2d]]()}},1000)}var clipboard= new ClipboardJS(__Ox24410[0x25]);clipboard[__Ox24410[0x44]](__Ox24410[0x41],function(_0x9929x20){$(__Ox24410[0x42])[__Ox24410[0x2d]]();setTimeout(function(){$(__Ox24410[0x42])[__Ox24410[0x43]]()},3000)});document[__Ox24410[0x45]]= function(_0x9929x20){_0x9929x20[__Ox24410[0x46]]()};if(!is_weixin()){mqq[__Ox24410[0x49]][__Ox24410[0x48]]({right:{title:__Ox24410[0x47],callback:function(){}}})}
+
+
+// 结束了
+    </script>
+    <div id="cli_dialog_div"></div>
+</body>
+
+</html>
