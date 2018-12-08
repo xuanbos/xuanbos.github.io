@@ -6,30 +6,39 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.xuanbosblog.com">
-  <title>从前不回头，以后不将就。2017再见，2018你好！ | Xxxuan的博客</title>
+  <title>微信小程序flex布局学习笔记(01) | Xxxuan的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="今年的跨年我又是和“男”的过！">
-<meta name="keywords" content="随笔,跨年">
+  <meta name="keywords" content="flex,微信小程序">
 <meta property="og:type" content="article">
-<meta property="og:title" content="从前不回头，以后不将就。2017再见，2018你好！">
-<meta property="og:url" content="http://www.xuanbosblog.com/2018/03/29/从前不回头，以后不将就。2017再见，2018你好！/index.html">
+<meta property="og:title" content="微信小程序flex布局学习笔记(01)">
+<meta property="og:url" content="http://www.xuanbosblog.com/2018/12/08/微信小程序flex布局学习笔记(01)/index.html">
 <meta property="og:site_name" content="Xxxuan的博客">
-<meta property="og:description" content="今年的跨年我又是和“男”的过！">
-<meta property="og:image" content="https://i.loli.net/2018/01/01/5a49204e11468.jpg">
-<meta property="og:image" content="https://i.loli.net/2018/01/01/5a492196debf5.jpg">
-<meta property="og:image" content="https://i.loli.net/2018/01/01/5a49224b475d1.jpg">
-<meta property="og:image" content="https://i.loli.net/2018/01/01/5a49224bc2fb2.jpg">
-<meta property="og:image" content="https://i.loli.net/2018/01/01/5a49224c00822.jpg">
-<meta property="og:image" content="https://i.loli.net/2018/01/01/5a49224c93454.jpg">
-<meta property="og:image" content="http://img.blog.csdn.net/20180101015839207?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2VpeGluXzQxMDk5NzQ2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20180101015900554?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2VpeGluXzQxMDk5NzQ2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20180101020240532?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2VpeGluXzQxMDk5NzQ2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:image" content="http://img.blog.csdn.net/20180101021200543?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2VpeGluXzQxMDk5NzQ2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:updated_time" content="2018-01-31T07:08:47.617Z">
+<meta property="og:image" content="https://i.loli.net/2018/12/08/5c0bc42eaf041.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/12/08/5c0bc4523dfea.png">
+<meta property="og:image" content="https://i.loli.net/2018/12/08/5c0bc462cc2e7.png">
+<meta property="og:image" content="https://i.loli.net/2018/12/08/5c0bc48d010aa.png">
+<meta property="og:image" content="https://i.loli.net/2018/12/08/5c0bc49c26f61.png">
+<meta property="og:image" content="https://i.loli.net/2018/12/08/5c0bc4a868b04.png">
+<meta property="og:image" content="https://i.loli.net/2018/12/08/5c0bc462cc2e7.png">
+<meta property="og:image" content="https://i.loli.net/2018/12/08/5c0bc53f654b7.png">
+<meta property="og:image" content="https://i.loli.net/2018/12/08/5c0bc54ddec11.png">
+<meta property="og:image" content="https://i.loli.net/2018/12/08/5c0bc55aee42d.png">
+<meta property="og:image" content="https://i.loli.net/2018/12/08/5c0bc5669f95b.png">
+<meta property="og:image" content="https://i.loli.net/2018/12/08/5c0bc5771de48.png">
+<meta property="og:image" content="https://i.loli.net/2018/12/08/5c0bc57caaf88.png">
+<meta property="og:image" content="https://i.loli.net/2018/12/08/5c0bc580c4945.png">
+<meta property="og:image" content="https://i.loli.net/2018/12/08/5c0bc5a1a496b.png">
+<meta property="og:image" content="https://i.loli.net/2018/12/08/5c0bc5b86db81.png">
+<meta property="og:image" content="https://i.loli.net/2018/12/08/5c0bc5cccd1a9.png">
+<meta property="og:image" content="https://i.loli.net/2018/12/08/5c0bc5d793106.png">
+<meta property="og:image" content="https://i.loli.net/2018/12/08/5c0bc5f701393.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/12/08/5c0bc6024b017.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/12/08/5c0bc607837bf.jpg">
+<meta property="og:image" content="https://i.loli.net/2018/12/08/5c0bc60c8f7b2.jpg">
+<meta property="og:updated_time" content="2018-12-08T13:28:17.092Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="从前不回头，以后不将就。2017再见，2018你好！">
-<meta name="twitter:description" content="今年的跨年我又是和“男”的过！">
-<meta name="twitter:image" content="https://i.loli.net/2018/01/01/5a49204e11468.jpg">
+<meta name="twitter:title" content="微信小程序flex布局学习笔记(01)">
+<meta name="twitter:image" content="https://i.loli.net/2018/12/08/5c0bc42eaf041.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Xxxuan的博客" type="application/atom+xml">
   
@@ -178,48 +187,112 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-从前不回头，以后不将就。2017再见，2018你好！" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-微信小程序flex布局学习笔记(01)" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      从前不回头，以后不将就。2017再见，2018你好！
+      微信小程序flex布局学习笔记(01)
     </h1>
   
 
         
-        <a href="/2018/03/29/从前不回头，以后不将就。2017再见，2018你好！/" class="archive-article-date">
-  	<time datetime="2018-03-29T09:52:45.975Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-29</time>
+        <a href="/2018/12/08/微信小程序flex布局学习笔记(01)/" class="archive-article-date">
+  	<time datetime="2018-12-08T13:01:31.156Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-08</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <script src="\assets\js\APlayer.min.js"> </script><h1 id="今年的跨年我又是和“男”的过！"><a href="#今年的跨年我又是和“男”的过！" class="headerlink" title="今年的跨年我又是和“男”的过！"></a>今年的跨年我又是和“男”的过！</h1><p><img src="https://i.loli.net/2018/01/01/5a49204e11468.jpg" alt="1.jpg"></p>
-<p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=155780&auto=0&height=66"></iframe><br><a id="more"></a></p>
-<ul>
-<li>和嘉晨莫名其妙聊着聊着跨年就打车到了苏州中心</li>
-<li><img src="https://i.loli.net/2018/01/01/5a492196debf5.jpg" alt="QQ图片20180101014233.jpg"></li>
-</ul>
-<h2 id="附上几张照片"><a href="#附上几张照片" class="headerlink" title="附上几张照片"></a>附上几张照片</h2><p><img src="https://i.loli.net/2018/01/01/5a49224b475d1.jpg" alt="QQ图片20180101014355.jpg"><br><img src="https://i.loli.net/2018/01/01/5a49224bc2fb2.jpg" alt="QQ图片20180101014443.jpg"><br><img src="https://i.loli.net/2018/01/01/5a49224c00822.jpg" alt="QQ图片20180101014526.jpg"><br><img src="https://i.loli.net/2018/01/01/5a49224c93454.jpg" alt="QQ图片20180101014502.jpg"><br><img src="http://img.blog.csdn.net/20180101015839207?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2VpeGluXzQxMDk5NzQ2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br><img src="http://img.blog.csdn.net/20180101015900554?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2VpeGluXzQxMDk5NzQ2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<h2 id="和他转完苏州中心又溜达了一遍山塘街"><a href="#和他转完苏州中心又溜达了一遍山塘街" class="headerlink" title="和他转完苏州中心又溜达了一遍山塘街"></a>和他转完苏州中心又溜达了一遍山塘街</h2><p><img src="http://img.blog.csdn.net/20180101020240532?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2VpeGluXzQxMDk5NzQ2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<h2 id="写给自己亲爱的自己"><a href="#写给自己亲爱的自己" class="headerlink" title="写给自己亲爱的自己"></a>写给自己亲爱的自己</h2><ul>
-<li>如果不开心了就找个角落或 者在被子里哭一下，你不需要别人同情可怜， 哭过之后一样可以开心生活。亲爱的自己，学<br>会控制自己的情绪，谁都不欠你，所以你没有 道理跟别人随便发脾气，耍性子。亲爱的 自己，你可以失望但不能绝望，你要始终相信，tomorrow<br>is another day.</li>
-</ul>
-<h2 id="给正在迷茫的你"><a href="#给正在迷茫的你" class="headerlink" title="给正在迷茫的你"></a>给正在迷茫的你</h2><ul>
-<li>每个优秀的人，都有一段沉默的时光，生活给你一百个理由哭泣，你就拿出一百零一个理由笑给它看。你所做的事情，也许暂时看不到成果，但不要灰心或焦虑。你不是没有成长，而是在扎根。曾经荒废的时光，没时间遗憾，唯有追赶和改变。最痛苦的不是失败的泪水，而是不曾尽力的懊悔。别让明天的你，讨厌今天的自己。</li>
-</ul>
-<h2 id="写给成长岁月无声"><a href="#写给成长岁月无声" class="headerlink" title="写给成长岁月无声"></a>写给成长岁月无声</h2><ul>
-<li>静默地伴我们长大，那季节里，如莲花开了落落了开的等待，恒久 地抒发着不变的情怀。光阴荏苒，我们都 不再是跌了就哭的小孩，现实总让人无奈<br>，而我们只能被迫，去接受和征服这一汪 苦海。流年似水，我们的生活不再拘于童 真时代，社会才是大舞台，花儿总是要在 风雨的洗礼下盛开。</li>
-</ul>
+        <script src="\assets\js\APlayer.min.js"> </script><p><img src="https://i.loli.net/2018/12/08/5c0bc42eaf041.jpg" alt="timg.jpg"><br><a id="more"></a></p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=1298115579&auto=1&height=66"></iframe>
+
+<p>在微信小程序中，view是最基础的布局容器，其支持两种布局方式block、flex，默认情况下，view的布局方式是block，如下图</p>
+<p><img src="https://i.loli.net/2018/12/08/5c0bc4523dfea.png" alt="block.PNG"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;view class=&quot;flex&quot;&gt;</span><br><span class="line">&lt;view class=&apos;flex-item&apos; style=&apos;background-color:red;&apos;&gt;1&lt;/view&gt;</span><br><span class="line">&lt;view class=&apos;flex-item&apos; style=&apos;background-color:pink;&apos;&gt;2&lt;/view&gt;</span><br><span class="line">&lt;view class=&apos;flex-item&apos; style=&apos;background-color:yellow;&apos;&gt;3&lt;/view&gt;</span><br><span class="line">&lt;/view&gt;</span><br></pre></td></tr></table></figure>
 <hr>
-<pre><code>不管这一年，你过得快乐或是伤心、收获还是迷茫，都得和那些开心的日子，那些孤独的夜晚，和那些破碎的承诺，还有那混乱的麻烦说再见了。
-  对那些帮助过你的，激励你的，感动你的，震撼你的，陪伴过你的，还有欺负你的，伤过你的人，说声谢谢，是这些人，让你成长。别忘了你的梦想，一切会更美好的！
-</code></pre><h2 id="不沉迷于幻想，"><a href="#不沉迷于幻想，" class="headerlink" title="不沉迷于幻想，"></a><strong>不沉迷于幻想，</strong></h2><h2 id="不茫然于未来，"><a href="#不茫然于未来，" class="headerlink" title="不茫然于未来，"></a><strong>不茫然于未来，</strong></h2><h2 id="过当下的生活，"><a href="#过当下的生活，" class="headerlink" title="过当下的生活，"></a><strong>过当下的生活，</strong></h2><h2 id="努力做最好的自己"><a href="#努力做最好的自己" class="headerlink" title="努力做最好的自己."></a><strong>努力做最好的自己.</strong></h2><p><img src="http://img.blog.csdn.net/20180101021200543?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2VpeGluXzQxMDk5NzQ2/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<p><strong>晚安 苏州</strong></p>
+<h3 id="flex-direction"><a href="#flex-direction" class="headerlink" title="flex-direction"></a>flex-direction</h3><p>在给view设置属性display: flex;之后，view的布局方式就会变为flex模式，此外还需要设置其flex-direction控制布局方向。<br>flex-direction有4个值：</p>
+<ol>
+<li>row：从左到右的水平方向为主轴</li>
+<li>row-reverse：从右到左的水平方向为主轴</li>
+<li>column：从上到下的垂直方向为主轴</li>
+<li>column-reverse：从下到上的垂直方向为主轴<h5 id="flex-direction-row"><a href="#flex-direction-row" class="headerlink" title="flex-direction: row;"></a>flex-direction: row;</h5></li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//index.wxml</span><br><span class="line">&lt;view class=&apos;flex&apos;&gt;</span><br><span class="line">    &lt;view class=&apos;flex-item&apos; style=&apos;background:red;&apos;&gt;1&lt;/view&gt;</span><br><span class="line">    &lt;view class=&apos;flex-item&apos; style=&apos;background:blue;&apos;&gt;2&lt;/view&gt;</span><br><span class="line">    &lt;view class=&apos;flex-item&apos; style=&apos;background:yellow;&apos;&gt;3&lt;/view&gt;</span><br><span class="line">&lt;/view&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//index.wxss</span><br><span class="line">.flex&#123;</span><br><span class="line">  display:flex;</span><br><span class="line">  flex-direction:row;</span><br><span class="line">  background-color:#ccc;</span><br><span class="line">&#125;</span><br><span class="line">.flex-item&#123;</span><br><span class="line">  width: 20%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>效果如下:</p>
+<p><img src="https://i.loli.net/2018/12/08/5c0bc462cc2e7.png" alt="1(1).PNG"></p>
+<h5 id="flex-direction-row-reverse"><a href="#flex-direction-row-reverse" class="headerlink" title="flex-direction: row-reverse"></a>flex-direction: row-reverse</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//index.wxss</span><br><span class="line">.flex&#123;</span><br><span class="line">  display:flex;</span><br><span class="line">flex-direction: row-reverse;</span><br><span class="line">  background-color:#ccc;</span><br><span class="line">&#125;</span><br><span class="line">.flex-item&#123;</span><br><span class="line">  width: 20%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>效果如下:</p>
+<p><img src="https://i.loli.net/2018/12/08/5c0bc48d010aa.png" alt="row-reverse.PNG"></p>
+<h5 id="flex-direction-column"><a href="#flex-direction-column" class="headerlink" title="flex-direction:column;"></a>flex-direction:column;</h5><p>效果如下:</p>
+<p><img src="https://i.loli.net/2018/12/08/5c0bc49c26f61.png" alt="column.PNG"></p>
+<h5 id="flex-direction-column-reverse"><a href="#flex-direction-column-reverse" class="headerlink" title="flex-direction: column-reverse;"></a>flex-direction: column-reverse;</h5><p>效果如下:</p>
+<p><img src="https://i.loli.net/2018/12/08/5c0bc4a868b04.png" alt="column-reverse.PNG"></p>
+<hr>
+<h3 id="justify-content"><a href="#justify-content" class="headerlink" title="justify-content"></a>justify-content</h3><p>控制内容的对齐方式，需要设置justify-content属性，该属性值有：</p>
+<ul>
+<li>flex-start：主轴起点对齐(默认值)。</li>
+<li>flex-end：主轴终点对齐。</li>
+<li>center：在主轴中居中对齐。</li>
+<li>space-between：两端对齐，除了两端的子元素分别靠向两端的容器之外，其他子元素之间的间隔都相等。</li>
+<li>space-around：每个子元素之间的距离相等，两端的子元素距离容器的距离也和其它子元素之间的距离相同。<h5 id="justify-content-flex-start"><a href="#justify-content-flex-start" class="headerlink" title="justify-content: flex-start;"></a>justify-content: flex-start;</h5>效果如下：</li>
+</ul>
+<p><img src="https://i.loli.net/2018/12/08/5c0bc462cc2e7.png" alt="1(1).PNG"></p>
+<h5 id="justify-content-flex-end"><a href="#justify-content-flex-end" class="headerlink" title="justify-content: flex-end;"></a>justify-content: flex-end;</h5><p>效果如下：</p>
+<p><img src="https://i.loli.net/2018/12/08/5c0bc53f654b7.png" alt="row-reverse.PNG"></p>
+<h5 id="justify-content-center"><a href="#justify-content-center" class="headerlink" title="justify-content: center;"></a>justify-content: center;</h5><p>效果如下：</p>
+<p><img src="https://i.loli.net/2018/12/08/5c0bc54ddec11.png" alt="center.PNG"></p>
+<h5 id="justify-content-space-between；"><a href="#justify-content-space-between；" class="headerlink" title="justify-content:space-between；"></a>justify-content:space-between；</h5><p>效果如下：</p>
+<p><img src="https://i.loli.net/2018/12/08/5c0bc55aee42d.png" alt="space-between.PNG"></p>
+<h5 id="justify-content-space-around；"><a href="#justify-content-space-around；" class="headerlink" title="justify-content:space-around；"></a>justify-content:space-around；</h5><p>效果如下：</p>
+<p><img src="https://i.loli.net/2018/12/08/5c0bc5669f95b.png" alt="speac-around.PNG"></p>
+<hr>
+<h3 id="align-items"><a href="#align-items" class="headerlink" title="align-items"></a>align-items</h3><p>align-items属性值有：</p>
+<ul>
+<li>stretch 填充整个容器(默认值)</li>
+<li>flex-start 起点对齐</li>
+<li>flex-end 终点对齐</li>
+<li>center 居中对齐</li>
+<li>baseline 以子元素的第一行文字对齐<h5 id="align-items：flex-start；"><a href="#align-items：flex-start；" class="headerlink" title="align-items：flex-start；"></a>align-items：flex-start；</h5>效果如下：</li>
+</ul>
+<p><img src="https://i.loli.net/2018/12/08/5c0bc5771de48.png" alt="align-start.PNG"></p>
+<h5 id="align-items：flex-end；"><a href="#align-items：flex-end；" class="headerlink" title="align-items：flex-end；"></a>align-items：flex-end；</h5><p>效果如下：</p>
+<p><img src="https://i.loli.net/2018/12/08/5c0bc57caaf88.png" alt="align-end.PNG"></p>
+<h5 id="align-items：center；"><a href="#align-items：center；" class="headerlink" title="align-items：center；"></a>align-items：center；</h5><p>效果如下：</p>
+<p><img src="https://i.loli.net/2018/12/08/5c0bc580c4945.png" alt="align-center.PNG"></p>
+<h5 id="align-items：baseline；"><a href="#align-items：baseline；" class="headerlink" title="align-items：baseline；"></a>align-items：baseline；</h5><p>效果如下：</p>
+<p><img src="https://i.loli.net/2018/12/08/5c0bc5a1a496b.png" alt="QQ图片20181208202727.png"></p>
+<h5 id="stretch-填充整个容器-默认值"><a href="#stretch-填充整个容器-默认值" class="headerlink" title="stretch 填充整个容器(默认值)"></a>stretch 填充整个容器(默认值)</h5><hr>
+<h3 id="flex-wrap"><a href="#flex-wrap" class="headerlink" title="flex-wrap"></a>flex-wrap</h3><p>用于控制子 View 是否换行：</p>
+<ul>
+<li>nowrap：不换行（默认）</li>
+<li>wrap：换行</li>
+<li>wrap-reverse：换行，第一行在最下面</li>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;view class=&quot;flex&quot;&gt;</span><br><span class="line">&lt;view class=&apos;flex-item&apos; style=&apos;background-color:red;&apos;&gt;1&lt;/view&gt;</span><br><span class="line">&lt;view class=&apos;flex-item&apos; style=&apos;background-color:pink;&apos;&gt;2&lt;/view&gt;</span><br><span class="line">&lt;view class=&apos;flex-item&apos; style=&apos;background-color:yellow;&apos;&gt;3&lt;/view&gt;</span><br><span class="line">&lt;view class=&apos;flex-item&apos; style=&apos;background-color:red;&apos;&gt;1&lt;/view&gt;</span><br><span class="line">&lt;view class=&apos;flex-item&apos; style=&apos;background-color:pink;&apos;&gt;2&lt;/view&gt;</span><br><span class="line">&lt;view class=&apos;flex-item&apos; style=&apos;background-color:yellow;&apos;&gt;3&lt;/view&gt;</span><br><span class="line">&lt;/view&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">.flex&#123;</span><br><span class="line">  display:flex;</span><br><span class="line"> flex-direction:rpw;</span><br><span class="line">  background-color:#ccc;</span><br><span class="line"> flex-wrap:nowrap;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">.flex-item&#123;</span><br><span class="line">  width: 50%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>每个宽度为百分之50；</p>
+<p>不换行（默认）效果图如下 ：</p>
+<p><img src="https://i.loli.net/2018/12/08/5c0bc5b86db81.png" alt="nowrap.PNG"></p>
+<p>换行 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">.flex&#123;</span><br><span class="line">  display:flex;</span><br><span class="line"> flex-direction:rpw;</span><br><span class="line">  background-color:#ccc;</span><br><span class="line"> flex-wrap:wrap;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">.flex-item&#123;</span><br><span class="line">  width: 50%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>效果图如下：</p>
+<p><img src="https://i.loli.net/2018/12/08/5c0bc5cccd1a9.png" alt="wrapPNG.PNG"></p>
+<p>wrap-reverse：换行，第一行在最下面<br>效果如下：</p>
+<p><img src="https://i.loli.net/2018/12/08/5c0bc5d793106.png" alt="warp-reverse.PNG"></p>
+<hr>
+<hr>
+<p><img src="https://i.loli.net/2018/12/08/5c0bc5f701393.jpg" alt="u=2878425317,3255719393&amp;fm=11&amp;gp=0.jpg"></p>
+<p><img src="https://i.loli.net/2018/12/08/5c0bc6024b017.jpg" alt="u=493949425,3681303524&amp;fm=11&amp;gp=0.jpg"></p>
+<p><img src="https://i.loli.net/2018/12/08/5c0bc607837bf.jpg" alt="u=2754205688,3543005169&amp;fm=15&amp;gp=0.jpg"></p>
+<p><img src="https://i.loli.net/2018/12/08/5c0bc60c8f7b2.jpg" alt="5e044e4a20a44623292d4dc39322720e0df3d756.jpg"></p>
+<p>2018/12/8/21</p>
+<p>Bye~</p>
 
       
 
@@ -264,11 +337,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">flex</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">跨年</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">微信小程序</a>
         		</li>
       		
 		</ul>
@@ -324,7 +397,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://www.xuanbosblog.com/2018/03/29/从前不回头，以后不将就。2017再见，2018你好！/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://www.xuanbosblog.com/2018/12/08/微信小程序flex布局学习笔记(01)/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -338,18 +411,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/03/29/使用Apache服务部署静态网站/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          使用Apache服务部署静态网站
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/03/29/上海东方绿舟“冬游”/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">上海东方绿舟&#34;冬游&#34;</div>
+    <a href="/2018/11/09/Linux基础操作/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Linux基础操作</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -376,7 +440,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#今年的跨年我又是和“男”的过！"><span class="toc-number">1.</span> <span class="toc-text">今年的跨年我又是和“男”的过！</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#附上几张照片"><span class="toc-number">1.1.</span> <span class="toc-text">附上几张照片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#和他转完苏州中心又溜达了一遍山塘街"><span class="toc-number">1.2.</span> <span class="toc-text">和他转完苏州中心又溜达了一遍山塘街</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#写给自己亲爱的自己"><span class="toc-number">1.3.</span> <span class="toc-text">写给自己亲爱的自己</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#给正在迷茫的你"><span class="toc-number">1.4.</span> <span class="toc-text">给正在迷茫的你</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#写给成长岁月无声"><span class="toc-number">1.5.</span> <span class="toc-text">写给成长岁月无声</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#不沉迷于幻想，"><span class="toc-number">1.6.</span> <span class="toc-text">不沉迷于幻想，</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#不茫然于未来，"><span class="toc-number">1.7.</span> <span class="toc-text">不茫然于未来，</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#过当下的生活，"><span class="toc-number">1.8.</span> <span class="toc-text">过当下的生活，</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#努力做最好的自己"><span class="toc-number">1.9.</span> <span class="toc-text">努力做最好的自己.</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#flex-direction"><span class="toc-number">1.</span> <span class="toc-text">flex-direction</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#flex-direction-row"><span class="toc-number">1.0.1.</span> <span class="toc-text">flex-direction: row;</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#flex-direction-row-reverse"><span class="toc-number">1.0.2.</span> <span class="toc-text">flex-direction: row-reverse</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#flex-direction-column"><span class="toc-number">1.0.3.</span> <span class="toc-text">flex-direction:column;</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#flex-direction-column-reverse"><span class="toc-number">1.0.4.</span> <span class="toc-text">flex-direction: column-reverse;</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#justify-content"><span class="toc-number">2.</span> <span class="toc-text">justify-content</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#justify-content-flex-start"><span class="toc-number">2.0.1.</span> <span class="toc-text">justify-content: flex-start;</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#justify-content-flex-end"><span class="toc-number">2.0.2.</span> <span class="toc-text">justify-content: flex-end;</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#justify-content-center"><span class="toc-number">2.0.3.</span> <span class="toc-text">justify-content: center;</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#justify-content-space-between；"><span class="toc-number">2.0.4.</span> <span class="toc-text">justify-content:space-between；</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#justify-content-space-around；"><span class="toc-number">2.0.5.</span> <span class="toc-text">justify-content:space-around；</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#align-items"><span class="toc-number">3.</span> <span class="toc-text">align-items</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#align-items：flex-start；"><span class="toc-number">3.0.1.</span> <span class="toc-text">align-items：flex-start；</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#align-items：flex-end；"><span class="toc-number">3.0.2.</span> <span class="toc-text">align-items：flex-end；</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#align-items：center；"><span class="toc-number">3.0.3.</span> <span class="toc-text">align-items：center；</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#align-items：baseline；"><span class="toc-number">3.0.4.</span> <span class="toc-text">align-items：baseline；</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#stretch-填充整个容器-默认值"><span class="toc-number">3.0.5.</span> <span class="toc-text">stretch 填充整个容器(默认值)</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#flex-wrap"><span class="toc-number">4.</span> <span class="toc-text">flex-wrap</span></a></li></ol>
                     </div>
                 </span>
             </div>
